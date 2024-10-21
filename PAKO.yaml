@@ -212,4 +212,5 @@ rules:
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
+  - "DOMAIN-KEYWORD,vodplay,DIRECT"
   - "MATCH,PROXY"
