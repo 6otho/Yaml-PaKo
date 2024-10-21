@@ -211,5 +211,5 @@ rules:
   - "RULE-SET,geolocation-!cn,PROXY"
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
-  - "DOMAIN-KEYWORD,vidhub1.cc,DIRECT"
+  - "DOMAIN-KEYWORD,vidhub1.cc,PROXY"
   - "MATCH,PROXY"
