@@ -185,6 +185,14 @@ proxy-groups:
     name: KR AUTO
     type: url-test
     interval: 300
+  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
+    name: Netflix
+    type: select
+    proxies:
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
 
 rules:
   - DOMAIN,domainname,PROXY
@@ -197,7 +205,7 @@ rules:
   - RULE-SET,telegram_domain,Telegram
   - RULE-SET,telegram_ip,Telegram
   - RULE-SET,private,PROXY
-  - RULE-SET,netflix_domain,PROXY
+  - RULE-SET,netflix_domain,Netflix
   - RULE-SET,bing,Google
   - RULE-SET,steam,PROXY
   - RULE-SET,geolocation-!cn,PROXY
