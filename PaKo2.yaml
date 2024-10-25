@@ -106,7 +106,7 @@ rule-providers:
     type: http
 
 proxy-groups:
-  - icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+  - icon: https://camo.githubusercontent.com/cb9d3728c5de938d47c9c395107c1514bb9b706dd31695ea58bab178bc2a821b/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f4669746e6573732f416c61726d2e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PROXY
