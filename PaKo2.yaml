@@ -106,7 +106,7 @@ rule-providers:
     type: http
 
 proxy-groups:
-  - icon: https://camo.githubusercontent.com/cb9d3728c5de938d47c9c395107c1514bb9b706dd31695ea58bab178bc2a821b/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f4669746e6573732f416c61726d2e706e67
+  - icon: https://camo.githubusercontent.com/b1cf9ec4b0199d04c69aaad15e015f5689c35122f29a7642c62fc55899581353/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f466f6f642d44656c69766572792f4672656e63685f46726965732e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PROXY
@@ -118,13 +118,13 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+  - icon: https://camo.githubusercontent.com/0d71f15487f74ffccb4daad28f143bd5e357e15e827a36d4eeab4acfa701771f/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f476f6f676c655f53756974652f41646d696e2e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+  - icon: https://camo.githubusercontent.com/69582c12ee211d56dc155de8b4c24e8c5f3780ee9efffb0e296875b57474febe/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f536f6369616c5f4d656469612f5265646469742e706e67
     name: AIGC
     type: select
     proxies:
@@ -132,7 +132,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+  - icon: https://camo.githubusercontent.com/688ef244170e96653b96df4055f6f498ab06b9d9fb15ba5ca32707d0b886d16e/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f536f6369616c5f4d656469612f54656c656772616d2e706e67
     name: Telegram
     type: select
     proxies:
@@ -141,7 +141,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+  - icon: https://camo.githubusercontent.com/e4a0db23065bffb0d188b9c99a4e17756070bdf86f5d84bcfc6332d8dab63aed/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f476f6f676c655f53756974652f476f6f676c652e706e67
     name: Google
     type: select
     proxies:
@@ -150,7 +150,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
+  - icon: https://camo.githubusercontent.com/6f37aa0d3c5fbb383ce9cb29fd08aa7b0dff2673b2dbfb039938ac8f4fe3cf80/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f4e6574666c69782e706e67
     name: Netflix
     type: select
     proxies:
@@ -158,35 +158,35 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+  - icon: https://camo.githubusercontent.com/36fba92cf18bbcbbf89a888849166699423ad6b272340cacb6d0262e16197fee/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f486f6e675f4b6f6e672e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)香港|Hong Kong|HK|🇭🇰
     name: HK AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+  - icon: https://camo.githubusercontent.com/5540e8df541c84a1f8b3f27517037d77f83b85250e7fe81fae25303c61ab4e65/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f53696e6761706f72652e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)新加坡|Singapore|🇸🇬
     name: SG AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+  - icon: https://camo.githubusercontent.com/1cce9f27d16d7f2162c4a461c75d56eedbd7c8b92b07bae22fee6b5e9e5d05c1/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f4a6170616e2e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)日本|Japan|🇯🇵
     name: JP AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+  - icon: https://camo.githubusercontent.com/addc7651006fb8b6a0542ed85a42763d472b6782193dae80bdb5f56983365114/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f556e697465645f5374617465732e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)美国|USA|🇺🇸
     name: US AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+  - icon: https://camo.githubusercontent.com/fe44e96885b6b1a1dbd5f0b84eb4fd2b8aeb2e1192c1e5e9307ea0d67fbce7e5/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f536f7574685f4b6f7265612e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
