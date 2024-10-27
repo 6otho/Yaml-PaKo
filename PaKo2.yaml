@@ -240,5 +240,5 @@ rules:
   - RULE-SET,geolocation-!cn,PROXY
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
-  - RULE-SET,youtube_domain,youtube
+  - RULE-SET,youtube_domain,Youtube
   - MATCH,PROXY
