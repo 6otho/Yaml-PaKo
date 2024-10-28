@@ -132,7 +132,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://camo.githubusercontent.com/cc78c2db0675e104ee8c4b63bb78be1e6b35f1343213e312a3ba7e811339959b/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f4b6f6f6c736f6e2f51757265406d61737465722f49636f6e5365742f436f6c6f722f596f75547562655f4d757369632e706e67
+  - icon: https://camo.githubusercontent.com/62aebe7250bb15f769b79814bb31a53fcf797e0baedb46c74a9577ad9df3cbf3/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f4f727a2d332f6d696e69406d61737465722f436f6c6f722f596f75547562652e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: Youtube
