@@ -185,6 +185,16 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+  - icon: https://camo.githubusercontent.com/621cf209702eaae5d5d67ce588665be433c41c420050daa7c272d4f59a6541ee/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f537465616d2e706e67
+    name: Steam
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
   - icon: https://camo.githubusercontent.com/36fba92cf18bbcbbf89a888849166699423ad6b272340cacb6d0262e16197fee/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f486f6e675f4b6f6e672e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -236,7 +246,7 @@ rules:
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,emby_domain,Netflix
   - RULE-SET,bing,Google
-  - RULE-SET,steam,PROXY
+  - RULE-SET,steam,Steam
   - RULE-SET,geolocation-!cn,PROXY
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
