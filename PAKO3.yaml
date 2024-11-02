@@ -184,6 +184,16 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+  - icon: https://camo.githubusercontent.com/ea89de75a833039c0e83b79ed5c937380c678243f94068cc0e2ebeb5ddd70b06/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f4f727a2d332f6d696e69406d61737465722f436f6c6f722f537465616d2e706e67
+    name: Steam
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
   - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -235,7 +245,7 @@ rules:
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,emby_domain,Netflix
   - RULE-SET,bing,Google
-  - RULE-SET,steam,PROXY
+  - RULE-SET,steam,Steam
   - RULE-SET,geolocation-!cn,PROXY
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
