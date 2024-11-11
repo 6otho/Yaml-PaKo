@@ -174,21 +174,22 @@ proxy-groups:
     name: Google
     type: select
     proxies:
+      - PROXY
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
   - icon: https://camo.githubusercontent.com/6f37aa0d3c5fbb383ce9cb29fd08aa7b0dff2673b2dbfb039938ac8f4fe3cf80/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f4e6574666c69782e706e67
     name: Netflix
     type: select
     proxies:
+      - PROXY
+      - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
   - icon: https://camo.githubusercontent.com/621cf209702eaae5d5d67ce588665be433c41c420050daa7c272d4f59a6541ee/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f537465616d2e706e67
     name: Steam
     type: select
