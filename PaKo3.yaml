@@ -118,9 +118,10 @@ rule-providers:
     interval: 86400
     format: yaml
     type: http
+    
 
 proxy-groups:
-  - icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PROXY
@@ -132,7 +133,52 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://camo.githubusercontent.com/62aebe7250bb15f769b79814bb31a53fcf797e0baedb46c74a9577ad9df3cbf3/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f4f727a2d332f6d696e69406d61737465722f436f6c6f722f596f75547562652e706e67
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    name: AUTO
+    type: url-test
+    interval: 300
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
+    name: AIGC
+    type: select
+    proxies:
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - PROXY
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    name: Telegram
+    type: select
+    proxies:
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - PROXY
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+    name: Google
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
+    name: Netflix
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: Youtube
@@ -143,52 +189,8 @@ proxy-groups:
       - SG AUTO
       - JP AUTO
       - US AUTO
-      - KR AUTO  
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: AUTO
-    type: url-test
-    interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
-    name: AIGC
-    type: select
-    proxies:
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
       - KR AUTO
-      - PROXY
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-    name: Telegram
-    type: select
-    proxies:
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PROXY
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
-    name: Google
-    type: select
-    proxies:
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PROXY
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
-    name: Netflix
-    type: select
-    proxies:
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PROXY
-  - icon: https://camo.githubusercontent.com/ea89de75a833039c0e83b79ed5c937380c678243f94068cc0e2ebeb5ddd70b06/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f4f727a2d332f6d696e69406d61737465722f436f6c6f722f537465616d2e706e67
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/steam(1).png
     name: Steam
     type: select
     proxies:
@@ -198,35 +200,35 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)香港|Hong Kong|HK|🇭🇰
     name: HK AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)新加坡|Singapore|🇸🇬
     name: SG AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)日本|Japan|🇯🇵
     name: JP AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)美国|USA|🇺🇸
     name: US AUTO
     type: url-test
     interval: 300
-  - icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
