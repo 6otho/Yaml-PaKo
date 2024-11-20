@@ -146,7 +146,7 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
-    interval: 300
+    interval: 3000
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: AIGC
     type: select
@@ -176,7 +176,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: hhttps://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     name: Spotify
     type: select
     proxies:
