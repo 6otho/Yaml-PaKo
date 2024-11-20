@@ -191,7 +191,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     name: Steam
     type: select
     proxies:
