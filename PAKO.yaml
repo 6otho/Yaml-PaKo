@@ -1,63 +1,155 @@
-# DNS 配置
 dns:
   enable: true
-  listen: 0.0.0.0:53  # 本地监听地址
-  enhanced-mode: fake-ip  # 使用 fake-ip 模式
-  nameserver:  # 主 DNS 服务器列表（国内优先）
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  nameserver:
     - 114.114.114.114
     - 223.5.5.5
-    - 8.8.8.8  # Google DNS
-    - 1.1.1.1  # Cloudflare DNS
-  fallback:  # 回退 DNS，用于代理域名解析
+    - 8.8.8.8
+    - 1.1.1.1
+  fallback:
     - 1.1.1.1
     - 8.8.4.4
     - 9.9.9.9
-  fallback-filter:  # 过滤无效地址
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-  fake-ip-filter:  # fake-ip 模式例外
+  fake-ip-filter:
     - '*.lan'
     - '*.local'
     - 'localhost'
-    - '*.example.com'
-
-# 规则提供者
 rule-providers:
   private:
     url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
     behavior: domain
     interval: 86400
+    format: yaml
+    type: http
   cn_domain:
     url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
     path: ./ruleset/cn_domain.yaml
     behavior: domain
     interval: 86400
+    format: yaml
+    type: http
   Spotify_domain:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    url: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Spotify/Spotify.yaml
     path: ./ruleset/Spotify_domain.yaml
-    behavior: domain
+    behavior: classical
     interval: 86400
+    format: yaml
+    type: http
   youtube_domain:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
     path: ./ruleset/youtube_domain.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  telegram_domain:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml
+    path: ./ruleset/telegram_domain.yaml
     behavior: domain
     interval: 86400
+    format: yaml
+    type: http
   google_domain:
     url: https://raw.githubusercontent.com/6otho/yamal-pako/refs/heads/main/google.yaml
     path: ./ruleset/google_domain.yaml
     behavior: domain
     interval: 86400
-  netflix_domain:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
-    path: ./ruleset/netflix_domain.yaml
+    format: yaml
+    type: http
+  geolocation-!cn:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
+    path: ./ruleset/geolocation-!cn.yaml
     behavior: domain
     interval: 86400
+    format: yaml
+    type: http
+  cn_ip:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
+    path: ./ruleset/cn_ip.yaml
+    behavior: ipcidr
+    interval: 86400
+    format: yaml
+    type: http
+  telegram_ip:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml
+    path: ./ruleset/telegram_ip.yaml
+    behavior: ipcidr
+    interval: 86400
+    format: yaml
+    type: http
+  google_ip:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
+    path: ./ruleset/google_ip.yaml
+    behavior: ipcidr
+    interval: 86400
+    format: yaml
+    type: http
+  bing:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    path: ./ruleset/bing.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  copilot:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
+    path: ./ruleset/copilot.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  claude:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+    path: ./ruleset/claude.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  bard:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BardAI/BardAI.yaml
+    path: ./ruleset/bard.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  openai:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./ruleset/openai.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  steam:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+    path: ./ruleset/steam.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  netflix_domain:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    path: ./ruleset/netflix_domain.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  emby_domain:
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml
+    path: ./ruleset/emby_domain.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+    
 
-# 代理组
 proxy-groups:
-  - name: PROXY
+  #- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    name: PROXY
     type: select
     proxies:
       - AUTO
@@ -66,59 +158,140 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - name: AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    name: AUTO
     type: url-test
+    interval: 3000
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
+    name: AIGC
+    type: select
+    proxies:
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - PROXY
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    name: Telegram
+    type: select
     proxies:
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - PROXY
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+    name: Google
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+    name: Spotify
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
+    name: Netflix
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    name: Youtube
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
+    name: Steam
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)香港|Hong Kong|HK|🇭🇰
+    name: HK AUTO
+    type: url-test
     interval: 300
-  - name: AIGC
-    type: select
-    proxies:
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PROXY
-  - name: Google
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-  - name: Youtube
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-  - name: Netflix
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)新加坡|Singapore|🇸🇬
+    name: SG AUTO
+    type: url-test
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)日本|Japan|🇯🇵
+    name: JP AUTO
+    type: url-test
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)美国|USA|🇺🇸
+    name: US AUTO
+    type: url-test
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)韩国|South Korea|🇰🇷
+    name: KR AUTO
+    type: url-test
+    interval: 300
 
-# 规则
+
 rules:
-  # 直连 vidhub1.cc
-  - DOMAIN-SUFFIX,vidhub1.cc,DIRECT
-  # 规则集
+  - DOMAIN-KEYWORD,vidhub1.cc,DIRECT
+  - DOMAIN,domainname,PROXY
   - RULE-SET,Spotify_domain,Spotify
   - RULE-SET,youtube_domain,Youtube
+  - RULE-SET,copilot,AIGC
+  - RULE-SET,claude,AIGC
+  - RULE-SET,bard,AIGC
+  - RULE-SET,openai,AIGC
   - RULE-SET,google_domain,Google
+  - RULE-SET,google_ip,Google
+  - RULE-SET,telegram_domain,Telegram
+  - RULE-SET,telegram_ip,Telegram
+  - RULE-SET,private,PROXY
   - RULE-SET,netflix_domain,Netflix
+  - RULE-SET,emby_domain,Netflix
+  - RULE-SET,bing,Google
+  - RULE-SET,steam,Steam
+  - RULE-SET,geolocation-!cn,PROXY
   - RULE-SET,cn_domain,DIRECT
+  - RULE-SET,cn_ip,DIRECT
   - MATCH,PROXY
+  
