@@ -1,19 +1,19 @@
 dns:
   enable: true
-  listen: 0.0.0.0:53  # 本地监听地址，默认值一般为 0.0.0.0:53
-  enhanced-mode: fake-ip  # 或 redir-host，根据需求选择
-  nameserver:  # 主 DNS 服务器列表
-    - 114.114.114.114  # 中国公共 DNS
-    - 223.5.5.5        # 阿里 DNS
-    - 8.8.8.8          # Google DNS
-  fallback:  # 回退 DNS（用于代理域名解析）
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  nameserver:
+    - 114.114.114.114
+    - 223.5.5.5
+    - 8.8.8.8
+  fallback:
     - 1.1.1.1
     - 8.8.4.4
-  fallback-filter:  # 回退 DNS 过滤设置
-    geoip: true  # 启用基于地理位置的过滤
+  fallback-filter:
+    geoip: true
     ipcidr:
-      - 240.0.0.0/4  # 过滤无效地址范围
-  fake-ip-filter:  # fake-ip 模式下不伪造的域名列表
+      - 240.0.0.0/4
+  fake-ip-filter:
     - '*.lan'
     - '*.local'
     - '*.example.com'
