@@ -256,6 +256,7 @@ proxy-groups:
 
 
 rules:
+  - DOMAIN-SUFFIX,vidhub1.cc,DIRECT
   - DOMAIN,domainname,PROXY
   - RULE-SET,Spotify_domain,Spotify
   - RULE-SET,youtube_domain,Youtube
@@ -276,3 +277,4 @@ rules:
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
   - MATCH,PROXY
+  
