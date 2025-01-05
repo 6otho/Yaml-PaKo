@@ -142,6 +142,13 @@ rule-providers:
     interval: 86400
     format: yaml
     type: http
+  dns_leak:
+    type: http
+    url: https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
+    path: ./ruleset/dns_leak.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
     
 
 proxy-groups:
@@ -294,5 +301,6 @@ rules:
   - RULE-SET,geolocation-!cn,PROXY
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
+  - RULE-SET,dns_leak,PROXY
   - MATCH,PROXY
   
