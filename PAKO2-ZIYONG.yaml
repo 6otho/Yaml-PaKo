@@ -1,3 +1,20 @@
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  nameserver:
+    - 114.114.114.114
+    - 223.5.5.5
+    - 8.8.8.8
+    - 1.1.1.1
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - 9.9.9.9
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - 'localhost'
 rule-providers:
   private:
     url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
@@ -10,6 +27,13 @@ rule-providers:
     url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
     path: ./ruleset/cn_domain.yaml
     behavior: domain
+    interval: 86400
+    format: yaml
+    type: http
+  Spotify_domain:
+    url: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Spotify/Spotify.yaml
+    path: ./ruleset/Spotify_domain.yaml
+    behavior: classical
     interval: 86400
     format: yaml
     type: http
@@ -118,13 +142,20 @@ rule-providers:
     interval: 86400
     format: yaml
     type: http
-    
+  dns_leak:
+    type: http
+    url: https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
+    path: ./ruleset/dns_leak.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
 
 proxy-groups:
-  - icon: https://camo.githubusercontent.com/05e9a973f64debca0b2788a7a58eed258e5fc2431b16644c667b155a0deefd84/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f53656c6563742e706e67
+  #- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PROXY
+    name: PAKO
     type: select
     proxies:
       - AUTO
@@ -133,25 +164,13 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://camo.githubusercontent.com/947c58a1a0b9afe3c81b0cc389ef8b455d031acf98cf289d6e0dc22cd0daa788/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f536f6369616c5f4d656469612f596f75547562652e706e67
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: Youtube
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-  - icon: https://camo.githubusercontent.com/a2adae79f2698863c02e53037c762a4238f1138839e33149d35800527945935e/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f536f6369616c5f4d656469612f4472696262626c652e706e67
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
-    type: url-test
-    interval: 30000
-  - icon: https://camo.githubusercontent.com/69582c12ee211d56dc155de8b4c24e8c5f3780ee9efffb0e296875b57474febe/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f536f6369616c5f4d656469612f5265646469742e706e67
+    type: select
+    interval: 3000
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: AIGC
     type: select
     proxies:
@@ -159,8 +178,9 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
-  - icon: https://camo.githubusercontent.com/688ef244170e96653b96df4055f6f498ab06b9d9fb15ba5ca32707d0b886d16e/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f536f6369616c5f4d656469612f54656c656772616d2e706e67
+      - PAKO
+      - AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
     proxies:
@@ -169,76 +189,99 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
-  - icon: https://camo.githubusercontent.com/e4a0db23065bffb0d188b9c99a4e17756070bdf86f5d84bcfc6332d8dab63aed/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f476f6f676c655f53756974652f476f6f676c652e706e67
+      - PAKO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     name: Google
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://camo.githubusercontent.com/6f37aa0d3c5fbb383ce9cb29fd08aa7b0dff2673b2dbfb039938ac8f4fe3cf80/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f4e6574666c69782e706e67
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+    name: Spotify
+    type: select
+    proxies:
+      - PAKO
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     name: Netflix
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://camo.githubusercontent.com/621cf209702eaae5d5d67ce588665be433c41c420050daa7c272d4f59a6541ee/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f556e6976657273616c2f537465616d2e706e67
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    name: Youtube
+    type: select
+    proxies:
+      - PAKO
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     name: Steam
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - DIRECT
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://camo.githubusercontent.com/36fba92cf18bbcbbf89a888849166699423ad6b272340cacb6d0262e16197fee/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f486f6e675f4b6f6e672e706e67
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)香港|Hong Kong|HK|🇭🇰
     name: HK AUTO
     type: url-test
-    interval: 30000
-  - icon: https://camo.githubusercontent.com/5540e8df541c84a1f8b3f27517037d77f83b85250e7fe81fae25303c61ab4e65/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f53696e6761706f72652e706e67
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)新加坡|Singapore|🇸🇬
     name: SG AUTO
     type: url-test
-    interval: 30000
-  - icon: https://camo.githubusercontent.com/1cce9f27d16d7f2162c4a461c75d56eedbd7c8b92b07bae22fee6b5e9e5d05c1/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f4a6170616e2e706e67
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)日本|Japan|🇯🇵
     name: JP AUTO
     type: url-test
-    interval: 30000
-  - icon: https://camo.githubusercontent.com/addc7651006fb8b6a0542ed85a42763d472b6782193dae80bdb5f56983365114/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f556e697465645f5374617465732e706e67
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)美国|USA|🇺🇸
     name: US AUTO
     type: url-test
-    interval: 30000
-  - icon: https://camo.githubusercontent.com/fe44e96885b6b1a1dbd5f0b84eb4fd2b8aeb2e1192c1e5e9307ea0d67fbce7e5/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f53656d706f7269612f48616e642d5061696e7465642d69636f6e406d61737465722f526f756e6465645f52656374616e676c652f536f7574685f4b6f7265612e706e67
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
     name: KR AUTO
     type: url-test
-    interval: 30000
-
+    interval: 300
 
 rules:
-  - DOMAIN,domainname,PROXY
+  - DOMAIN-KEYWORD,vidhub1.cc,DIRECT
+  - DOMAIN,domainname,PAKO
+  - RULE-SET,Spotify_domain,Spotify
   - RULE-SET,youtube_domain,Youtube
   - RULE-SET,copilot,AIGC
   - RULE-SET,claude,AIGC
@@ -248,12 +291,13 @@ rules:
   - RULE-SET,google_ip,Google
   - RULE-SET,telegram_domain,Telegram
   - RULE-SET,telegram_ip,Telegram
-  - RULE-SET,private,PROXY
+  - RULE-SET,private,PAKO
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,emby_domain,Netflix
   - RULE-SET,bing,Google
   - RULE-SET,steam,Steam
-  - RULE-SET,geolocation-!cn,PROXY
+  - RULE-SET,geolocation-!cn,PAKO
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
-  - MATCH,PROXY
+  - RULE-SET,dns_leak,PAKO
+  - MATCH,PAKO
