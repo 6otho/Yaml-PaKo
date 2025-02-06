@@ -300,4 +300,5 @@ rules:
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
   - RULE-SET,dns_leak,PAKO
+  - 'GEOIP,CN,DIRECT'
   - MATCH,PAKO
