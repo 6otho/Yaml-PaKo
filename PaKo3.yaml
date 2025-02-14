@@ -354,7 +354,7 @@ proxy-groups:
 
 rules:
   - DOMAIN-KEYWORD,vidhub1.cc,DIRECT
-  - DOMAIN,domainname,PROXY
+  - DOMAIN,domainname,PAKO
   - RULE-SET,Spotify_domain,Spotify
   - RULE-SET,youtube_domain,Youtube
   - RULE-SET,copilot,AIGC
@@ -365,13 +365,15 @@ rules:
   - RULE-SET,google_ip,Google
   - RULE-SET,telegram_domain,Telegram
   - RULE-SET,telegram_ip,Telegram
-  - RULE-SET,private,PROXY
+  - RULE-SET,private,PAKO
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,emby_domain,Netflix
   - RULE-SET,bing,Google
   - RULE-SET,steam,Steam
-  - RULE-SET,geolocation-!cn,PROXY
+  - RULE-SET,geolocation-!cn,PAKO
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
-  - MATCH,PROXY
+  - RULE-SET,dns_leak,PAKO
+  - 'GEOIP,CN,DIRECT'
+  - MATCH,PAKO
   
