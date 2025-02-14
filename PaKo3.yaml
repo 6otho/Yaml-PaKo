@@ -95,7 +95,7 @@ dns:
     "geosite:geolocation-!cn":
       - 'https://dns.cloudflare.com/dns-query#h3=true'
       - 'https://dns.google/dns-query#h3=true'
- rule-providers:
+rule-providers:
   private:
     url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
@@ -222,14 +222,20 @@ dns:
     interval: 86400
     format: yaml
     type: http
-    
+  dns_leak:
+    type: http
+    url: https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
+    path: ./ruleset/dns_leak.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
 
 proxy-groups:
   #- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PROXY
+    name: PAKO
     type: select
     proxies:
       - AUTO
@@ -242,8 +248,8 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
-    type: url-test
-    interval: 30000
+    type: select
+    interval: 3000
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: AIGC
     type: select
@@ -252,7 +258,8 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
+      - PAKO
+      - AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
@@ -262,12 +269,12 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
+      - PAKO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     name: Google
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -277,7 +284,7 @@ proxy-groups:
     name: Spotify
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -287,7 +294,7 @@ proxy-groups:
     name: Netflix
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -299,7 +306,7 @@ proxy-groups:
     name: Youtube
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -309,7 +316,7 @@ proxy-groups:
     name: Steam
     type: select
     proxies:
-      - PROXY
+      - PAKO
       - DIRECT
       - SG AUTO
       - JP AUTO
@@ -321,36 +328,35 @@ proxy-groups:
     filter: (?i)香港|Hong Kong|HK|🇭🇰
     name: HK AUTO
     type: url-test
-    interval: 30000
+    interval: 300
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)新加坡|Singapore|🇸🇬
     name: SG AUTO
     type: url-test
-    interval: 30000
+    interval: 300
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)日本|Japan|🇯🇵
     name: JP AUTO
     type: url-test
-    interval: 30000
+    interval: 300
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)美国|USA|🇺🇸
     name: US AUTO
     type: url-test
-    interval: 30000
+    interval: 300
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
     name: KR AUTO
     type: url-test
-    interval: 30000
-
+    interval: 300
 
 rules:
   - DOMAIN-KEYWORD,vidhub1.cc,DIRECT
@@ -376,4 +382,3 @@ rules:
   - RULE-SET,dns_leak,PAKO
   - 'GEOIP,CN,DIRECT'
   - MATCH,PAKO
-  
