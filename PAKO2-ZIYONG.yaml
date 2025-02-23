@@ -17,56 +17,56 @@ dns:
     - 'localhost'
 rule-providers:
   private:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
+    url: hhttps://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_domain:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
     path: ./ruleset/cn_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   Spotify_domain:
-    url: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Spotify/Spotify.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Spotify/Spotify.yaml
     path: ./ruleset/Spotify_domain.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   youtube_domain:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml
     path: ./ruleset/youtube_domain.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   telegram_domain:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml
     path: ./ruleset/telegram_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   google_domain:
-    url: https://raw.githubusercontent.com/6otho/yamal-pako/refs/heads/main/google.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/6otho/yamal-pako/refs/heads/main/google.yaml
     path: ./ruleset/google_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   geolocation-!cn:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
     path: ./ruleset/geolocation-!cn.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_ip:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
     path: ./ruleset/cn_ip.yaml
     behavior: ipcidr
     interval: 86400
@@ -80,63 +80,63 @@ rule-providers:
     format: yaml
     type: http
   google_ip:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
     path: ./ruleset/google_ip.yaml
     behavior: ipcidr
     interval: 86400
     format: yaml
     type: http
   bing:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bing/Bing.yaml
     path: ./ruleset/bing.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   copilot:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Copilot/Copilot.yaml
     path: ./ruleset/copilot.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   claude:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.yaml
     path: ./ruleset/claude.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   bard:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BardAI/BardAI.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BardAI/BardAI.yaml
     path: ./ruleset/bard.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   openai:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
     path: ./ruleset/openai.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   steam:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml
     path: ./ruleset/steam.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   netflix_domain:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml
     path: ./ruleset/netflix_domain.yaml
     behavior: classical
     interval: 86400
     format: yaml
     type: http
   emby_domain:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Emby/Emby.yaml
     path: ./ruleset/emby_domain.yaml
     behavior: classical
     interval: 86400
@@ -144,7 +144,7 @@ rule-providers:
     type: http
   dns_leak:
     type: http
-    url: https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
     path: ./ruleset/dns_leak.yaml
     behavior: classical
     interval: 86400
@@ -287,11 +287,6 @@ rules:
   - RULE-SET,claude,AIGC
   - RULE-SET,bard,AIGC
   - RULE-SET,openai,AIGC
-  # 新增显式规则，确保 ChatGPT 相关流量走 AIGC
-  - DOMAIN-SUFFIX,chat.openai.com,AIGC
-  - DOMAIN-SUFFIX,chatgpt.com,AIGC
-  - DOMAIN-SUFFIX,api.openai.com,AIGC
-  - DOMAIN-SUFFIX,auth0.com,AIGC
   - RULE-SET,google_domain,Google
   - RULE-SET,google_ip,Google
   - RULE-SET,telegram_domain,Telegram
@@ -305,5 +300,5 @@ rules:
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT
   - RULE-SET,dns_leak,PAKO
-  - GEOIP,CN,DIRECT
+  - 'GEOIP,CN,DIRECT'
   - MATCH,PAKO
