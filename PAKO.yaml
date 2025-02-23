@@ -194,7 +194,7 @@ proxy-groups:
     name: Google
     type: select
     proxies:
-      - PAKO
+      - PROXY
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -214,7 +214,7 @@ proxy-groups:
     name: Netflix
     type: select
     proxies:
-      - PAKO
+      - PROXY
       - HK AUTO
       - SG AUTO
       - JP AUTO
