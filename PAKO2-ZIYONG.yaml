@@ -17,7 +17,7 @@ dns:
     - 'localhost'
 rule-providers:
   private:
-    url: hhttps://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
     behavior: domain
     interval: 86400
