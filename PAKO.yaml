@@ -13,6 +13,7 @@ dns:
   nameserver:
     - https://223.5.5.5/dns-query#h3=true
     - https://223.6.6.6/dns-query#h3=true
+
 rule-providers:
   private:
     url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
@@ -162,6 +163,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -178,6 +180,7 @@ proxy-groups:
       - KR AUTO
       - PROXY
       - AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
@@ -188,6 +191,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - PROXY
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     name: Google
     type: select
@@ -198,6 +202,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     name: Spotify
     type: select
@@ -208,6 +213,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     name: Netflix
     type: select
@@ -218,6 +224,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -230,6 +237,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     name: Steam
     type: select
@@ -240,6 +248,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -273,6 +282,13 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
     name: KR AUTO
+    type: url-test
+    interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/ALL.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)^(?!.*(?:新加坡|Singapore|🇸🇬|日本|Japan|🇯🇵|美国|USA|🇺🇸|韩国|South Korea|🇰🇷|香港|Hong Kong|HK|🇭🇰)).*$
+    name: GA AUTO
     type: url-test
     interval: 300
 
