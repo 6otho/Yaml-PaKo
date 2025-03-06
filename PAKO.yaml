@@ -284,7 +284,7 @@ proxy-groups:
     name: KR AUTO
     type: url-test
     interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Un.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|🇸🇬|日本|Japan|🇯🇵|美国|USA|🇺🇸|韩国|South Korea|🇰🇷|香港|Hong Kong|HK|🇭🇰)).*$
