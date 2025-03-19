@@ -72,7 +72,7 @@ rule-providers:
     format: yaml
     type: http
   telegram_ip:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml
     path: ./ruleset/telegram_ip.yaml
     behavior: ipcidr
     interval: 86400
