@@ -291,7 +291,7 @@ proxy-groups:
     interval: 300
 
 rules:
-  - DOMAIN-KEYWORD,vidhub1.cc,DIRECT
+  - DOMAIN-KEYWORD,vidhub,DIRECT
   - DOMAIN,domainname,PROXY
   - RULE-SET,Spotify_domain,Spotify
   - RULE-SET,youtube_domain,Youtube
