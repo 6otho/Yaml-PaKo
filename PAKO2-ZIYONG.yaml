@@ -303,6 +303,7 @@ proxy-groups:
 
 rules:
   - DOMAIN-KEYWORD,vidhub1.cc,DIRECT
+  - DOMAIN-SUFFIX,lite.saturday.video,DIRECT
   - DOMAIN,domainname,PAKO
   - RULE-SET,Spotify_domain,Spotify
   - RULE-SET,youtube_domain,Youtube
