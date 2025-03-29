@@ -302,6 +302,7 @@ proxy-groups:
  
 
 rules:
+  - "DOMAIN-KEYWORD,agedm.org,DIRECT"
   - "DOMAIN-KEYWORD,vidhub1.cc,DIRECT"
   - "DOMAIN-SUFFIX,lite.saturday.video,DIRECT"
   - "DOMAIN-SUFFIX,dwq.emby.moe,DIRECT"
