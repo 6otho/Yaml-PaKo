@@ -291,31 +291,32 @@ proxy-groups:
     interval: 300
 
 rules:
-  - DOMAIN-KEYWORD,vidhub,DIRECT
-  - DOMAIN,domainname,PROXY
-  - RULE-SET,Spotify_domain,Spotify
-  - RULE-SET,youtube_domain,Youtube
-  - RULE-SET,copilot,AIGC
-  - RULE-SET,claude,AIGC
-  - RULE-SET,bard,AIGC
-  - RULE-SET,openai,AIGC
+  - "DOMAIN-KEYWORD,vidhub,DIRECT"
+  - "DOMAIN,domainname,PROXY"
+  - "RULE-SET,Spotify_domain,Spotify"
+  - "RULE-SET,youtube_domain,Youtube"
+  - "RULE-SET,copilot,AIGC"
+  - "RULE-SET,claude,AIGC"
+  - "RULE-SET,bard,AIGC"
+  - "RULE-SET,openai,AIGC"
   # 新增显式规则，确保 ChatGPT 相关流量走 AIGC
-  - DOMAIN-SUFFIX,chat.openai.com,AIGC
-  - DOMAIN-SUFFIX,chatgpt.com,AIGC
-  - DOMAIN-SUFFIX,api.openai.com,AIGC
-  - DOMAIN-SUFFIX,auth0.com,AIGC
-  - RULE-SET,google_domain,Google
-  - RULE-SET,google_ip,Google
-  - RULE-SET,telegram_domain,Telegram
-  - RULE-SET,telegram_ip,Telegram
-  - RULE-SET,private,PROXY
-  - RULE-SET,netflix_domain,Netflix
-  - RULE-SET,emby_domain,Netflix
-  - RULE-SET,bing,Google
-  - RULE-SET,steam,Steam
-  - RULE-SET,geolocation-!cn,PROXY
-  - RULE-SET,cn_domain,DIRECT
-  - RULE-SET,cn_ip,DIRECT
-  - RULE-SET,dns_leak,PROXY
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - "DOMAIN-SUFFIX,chat.openai.com,AIGC"
+  - "DOMAIN-SUFFIX,chatgpt.com,AIGC"
+  - "DOMAIN-SUFFIX,api.openai.com,AIGC"
+  - "DOMAIN-SUFFIX,auth0.com,AIGC"
+  - "RULE-SET,google_domain,Google"
+  - "RULE-SET,google_ip,Google"
+  - "RULE-SET,telegram_domain,Telegram"
+  - "RULE-SET,telegram_ip,Telegram"
+  - "RULE-SET,private,PROXY"
+  - "RULE-SET,netflix_domain,Netflix"
+  - "RULE-SET,emby_domain,Netflix"
+  - "RULE-SET,bing,Google"
+  - "RULE-SET,steam,Steam"
+  - "RULE-SET,geolocation-!cn,PROXY"
+  - "RULE-SET,cn_domain,DIRECT"
+  - "RULE-SET,cn_ip,DIRECT"
+  - "RULE-SET,dns_leak,PROXY"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,PROXY"
+
