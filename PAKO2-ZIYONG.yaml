@@ -309,6 +309,7 @@ rules:
   - "DOMAIN,domainname,PAKO"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
+  - "DOMAIN-SUFFIX,speedtest.net,PAKO"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,claude,AIGC"
   - "RULE-SET,bard,AIGC"
