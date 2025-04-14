@@ -252,7 +252,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - PAKO
+      - PROXY
       - SG AUTO
       - JP AUTO
       - US AUTO
