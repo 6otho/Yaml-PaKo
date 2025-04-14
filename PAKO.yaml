@@ -247,6 +247,17 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+    name: Mainland
+    type: select
+    proxies:
+      - DIRECT
+      - PAKO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
