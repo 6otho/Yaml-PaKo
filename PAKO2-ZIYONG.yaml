@@ -206,47 +206,28 @@ rule-providers:
     format: yaml
 
 proxy-groups:
+  #- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PAKO
     type: select
-    proxies:
-      - AUTO
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PAKO
-      - GA AUTO
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
     interval: 3000
-    proxies:
-      - AUTO
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PAKO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: FusionAI
     type: select
     proxies:
-      - AUTO
-      - HK AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
       - KR AUTO
       - PAKO
-      - GA AUTO
+      - AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
@@ -257,7 +238,6 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - PAKO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     name: Google
     type: select
@@ -268,7 +248,6 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     name: Spotify
     type: select
@@ -279,7 +258,6 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     name: Netflix
     type: select
@@ -290,8 +268,9 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: Youtube
     type: select
     proxies:
@@ -301,7 +280,6 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     name: Steam
     type: select
@@ -312,7 +290,6 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
     name: Mainland
     type: select
@@ -324,6 +301,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
+
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -400,4 +378,3 @@ rules:
   - "RULE-SET,dns_leak,PAKO"
   - "GEOIP,CN,Mainland"
   - "MATCH,PAKO"
-
