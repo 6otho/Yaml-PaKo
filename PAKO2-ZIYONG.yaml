@@ -226,7 +226,7 @@ proxy-groups:
     type: select
     interval: 3000
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
-    name: AIGC
+    name: FusionAI
     type: select
     proxies:
       - SG AUTO
@@ -366,14 +366,14 @@ rules:
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
   - "DOMAIN-SUFFIX,speedtest.net,PAKO"
-  - "RULE-SET,copilot,AIGC"
-  - "RULE-SET,claude,AIGC"
-  - "RULE-SET,bard,AIGC"
-  - "RULE-SET,openai,AIGC"
-  - "DOMAIN-SUFFIX,chat.openai.com,AIGC"
-  - "DOMAIN-SUFFIX,chatgpt.com,AIGC"
-  - "DOMAIN-SUFFIX,api.openai.com,AIGC"
-  - "DOMAIN-SUFFIX,auth0.com,AIGC"
+  - "RULE-SET,copilot,FusionAI"
+  - "RULE-SET,claude,FusionAI"
+  - "RULE-SET,bard,FusionAI"
+  - "RULE-SET,openai,FusionAI"
+  - "DOMAIN-SUFFIX,chat.openai.com,FusionAI"
+  - "DOMAIN-SUFFIX,chatgpt.com,FusionAI"
+  - "DOMAIN-SUFFIX,api.openai.com,FusionAI"
+  - "DOMAIN-SUFFIX,auth0.com,FusionAI"
   - "RULE-SET,google_domain,Google"
   - "RULE-SET,google_ip,Google"
   - "RULE-SET,telegram_domain,Telegram"
