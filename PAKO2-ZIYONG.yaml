@@ -218,15 +218,23 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
-    type: select
+    type: url-test
     interval: 3000
+    proxies:
+      - PAKO
+      
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: FusionAI
     type: select
     proxies:
-      - PAKO
       - AUTO
-      
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - PAKO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
