@@ -213,7 +213,6 @@ proxy-groups:
     type: select
     proxies:
       - AUTO
-      
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -222,7 +221,6 @@ proxy-groups:
     interval: 3000
     proxies:
       - PAKO
-      
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: FusionAI
     type: select
