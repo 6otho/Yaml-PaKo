@@ -1,64 +1,74 @@
 mixed-port: 7897
-redir-port: 7892
 allow-lan: true
 mode: rule
-external-controller: 127.0.0.1:9090
-log-level: warning
-
-global-ua: "clash-verge/v2.2.3"
-global-client-fingerprint: chrome
+global-ua: clash-verge/v2.2.3
 geodata-mode: true
 geodata-loader: standard
 unified-delay: true
+log-level: warning
+ipv6: true
+external-controller: 127.0.0.1:9090
 tcp-concurrent: true
 enable-process: true
 find-process-mode: strict
+global-client-fingerprint: chrome
 keep-alive-interval: 15
-
-ipv6: true
-
 geo-auto-update: true
-geo-update-interval: 24h
+geo-update-interval: 24
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
   asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
-
 profile:
   store-selected: true
   store-fake-ip: true
-
 tun:
-  enable: true
+  enable: false
   device: ClashVergeREV
   stack: mixed
   mtu: 1500
-  auto-route: true
-  auto-detect-interface: true
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-
+  auto-route: true
+  auto-detect-interface: true
 dns:
   enable: true
-  listen: 0.0.0.0:53
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
-  resolve-udp: true
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
     - 114.114.114.114
+    - system
   fake-ip-filter:
-    - "*.lan"
-    - "localhost"
+    - "*"
+    - "+.lan"
+    - "connect.rom.miui.com"
+    - "+.miwifi.com"
     - "+.ntp.org"
+    - "+.u-tools.cn"
+    - "+.mediatek.com"
+    - "+.cfprefer1.xyz"
+    - "+.wetab.link"
+    - "+.tyasaka.xyz"
+    # QQ
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    # WeChat
+    - "localhost.work.weixin.qq.com"
+    - "+.weixin.qq.com"
+    - "+.wechat.com"
+    # Windows
     - "time.windows.com"
     - "+.msftconnecttest.com"
     - "+.msftncsi.com"
+    - "+.wpsmail.net"
+    - "+.henzanapp.com"
+    - "+.pconline.com.cn"
 
 rule-providers:
   private:
