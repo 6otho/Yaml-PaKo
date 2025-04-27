@@ -204,6 +204,14 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: yaml
+  tiktok:
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/TikTok/TikTok.yaml
+    path: ./ruleset/tiktok.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+    
 
 proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
@@ -264,6 +272,17 @@ proxy-groups:
       - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     name: Netflix
+    type: select
+    proxies:
+      - PROXY
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - GA AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+    name: TikTok
     type: select
     proxies:
       - PROXY
@@ -354,6 +373,7 @@ rules:
   - "DOMAIN,domainname,PROXY"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
+  - "RULE-SET,tiktok,TikTok"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,claude,AIGC"
   - "RULE-SET,bard,AIGC"
