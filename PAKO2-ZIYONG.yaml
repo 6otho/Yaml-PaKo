@@ -345,7 +345,7 @@ proxy-groups:
     type: url-test
     interval: 300
  
- rules:
+rules:
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,DIRECT"
