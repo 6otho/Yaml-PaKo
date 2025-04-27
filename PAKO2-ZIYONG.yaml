@@ -204,6 +204,13 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: yaml
+  tiktok:
+    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/TikTok/TikTok.yaml
+    path: ./ruleset/tiktok.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
 
 proxy-groups:
   #- icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
@@ -268,6 +275,17 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+    name: TikTok
+    type: select
+    proxies:
+      - PAKO
+      - HK AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - GA AUTO
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -353,6 +371,7 @@ rules:
   - "DOMAIN,domainname,PAKO"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
+  - "RULE-SET,tiktok,TikTok"
   - "DOMAIN-SUFFIX,speedtest.net,PAKO"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,claude,AIGC"
