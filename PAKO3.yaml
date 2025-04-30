@@ -1,100 +1,74 @@
+mixed-port: 7897
+allow-lan: true
+mode: rule
+global-ua: clash-verge/v2.2.3
+geodata-mode: true
+geodata-loader: standard
+unified-delay: true
+log-level: warning
+ipv6: true
+external-controller: 127.0.0.1:9090
+tcp-concurrent: true
+enable-process: true
+find-process-mode: strict
+global-client-fingerprint: chrome
+keep-alive-interval: 15
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+  asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+profile:
+  store-selected: true
+  store-fake-ip: true
+tun:
+  enable: false
+  device: ClashVergeREV
+  stack: mixed
+  mtu: 1500
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-detect-interface: true
 dns:
   enable: true
-  prefer-h3: true
-  listen: 0.0.0.0:1053
-  ipv6: false
+  ipv6: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.0/15
-  fake-ip-filter:
-    - '*'
-    - '+.lan'
-    - '+.local'
-    - '+.market.xiaomi.com'
-    - 'connect.rom.miui.com'
-    - 'stun.*.*.*'
-    - 'stun.*.*'
-    - time.windows.com
-    - time.nist.gov
-    - time.apple.com
-    - time.asia.apple.com
-    - '*.ntp.org.cn'
-    - '*.openwrt.pool.ntp.org'
-    - time1.cloud.tencent.com
-    - time.ustc.edu.cn
-    - pool.ntp.org
-    - ntp.ubuntu.com
-    - ntp.aliyun.com
-    - ntp1.aliyun.com
-    - ntp2.aliyun.com
-    - ntp3.aliyun.com
-    - ntp4.aliyun.com
-    - ntp5.aliyun.com
-    - ntp6.aliyun.com
-    - ntp7.aliyun.com
-    - time1.aliyun.com
-    - time2.aliyun.com
-    - time3.aliyun.com
-    - time4.aliyun.com
-    - time5.aliyun.com
-    - time6.aliyun.com
-    - time7.aliyun.com
-    - '*.time.edu.cn'
-    - time1.apple.com
-    - time2.apple.com
-    - time3.apple.com
-    - time4.apple.com
-    - time5.apple.com
-    - time6.apple.com
-    - time7.apple.com
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
-    - music.163.com
-    - '*.music.163.com'
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com, y.qq.com
-    - '*.y.qq.com'
-    - streamoc.music.tc.qq.com
-    - mobileoc.music.tc.qq.com
-    - isure.stream.qqmusic.qq.com
-    - dl.stream.qqmusic.qq.com
-    - aqqmusic.tc.qq.com
-    - amobile.music.tc.qq.com
-    - '*.xiami.com'
-    - '*.music.migu.cn'
-    - music.migu.cn
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - localhost.ptlogin2.qq.com
-    - '*.*.*.srv.nintendo.net'
-    - '*.*.stun.playstation.net'
-    - 'xbox.*.*.microsoft.com'
-    - '*.ipv6.microsoft.com'
-    - '*.*.xboxlive.com'
-    - speedtest.cros.wr.pvp.net
-  default-nameserver:
-    - 'https://223.5.5.5/dns-query'
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
   nameserver:
-    - 'https://8.8.8.8/dns-query#h3=true'
-    - 'https://1.1.1.1/dns-query#h3=true'
-  proxy-server-nameserver:
-    - 'https://doh.pub/dns-query#h3=true'
-  nameserver-policy:
-    "geosite:cn,private":
-      - 'https://dns.alidns.com/dns-query#h3=true'
-      - 'https://223.5.5.5/dns-query#h3=true'
-      - 'https://223.6.6.6/dns-query#h3=true'
-    "geosite:geolocation-!cn":
-      - 'https://dns.cloudflare.com/dns-query#h3=true'
-      - 'https://dns.google/dns-query#h3=true'
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    - 114.114.114.114
+    - system
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "connect.rom.miui.com"
+    - "+.miwifi.com"
+    - "+.ntp.org"
+    - "+.u-tools.cn"
+    - "+.mediatek.com"
+    - "+.cfprefer1.xyz"
+    - "+.wetab.link"
+    - "+.tyasaka.xyz"
+    # QQ
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    # WeChat
+    - "localhost.work.weixin.qq.com"
+    - "+.weixin.qq.com"
+    - "+.wechat.com"
+    # Windows
+    - "time.windows.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "+.wpsmail.net"
+    - "+.henzanapp.com"
+    - "+.pconline.com.cn"
 rule-providers:
   private:
     url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
