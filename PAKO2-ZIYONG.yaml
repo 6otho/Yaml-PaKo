@@ -219,15 +219,19 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PAKO
     type: select
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
-    interval: 3000
+    interval: 300
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: AIGC
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - SG AUTO
       - JP AUTO
@@ -238,6 +242,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - HK AUTO
       - SG AUTO
@@ -248,6 +254,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     name: Google
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - PAKO
       - HK AUTO
@@ -258,6 +266,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     name: Spotify
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - PAKO
       - HK AUTO
@@ -268,6 +278,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     name: Netflix
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - PAKO
       - HK AUTO
@@ -278,6 +290,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
     name: TikTok
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - PAKO
       - HK AUTO
@@ -289,6 +303,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     name: Youtube
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - PAKO
       - HK AUTO
@@ -299,6 +315,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     name: Steam
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - PAKO
       - DIRECT
@@ -309,6 +327,8 @@ proxy-groups:
   - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
     name: Mainland
     type: select
+    interval: 300
+    max-failed-times: 3
     proxies:
       - DIRECT
       - PAKO
@@ -325,6 +345,7 @@ proxy-groups:
     name: HK AUTO
     type: url-test
     interval: 300
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -332,6 +353,7 @@ proxy-groups:
     name: SG AUTO
     type: url-test
     interval: 300
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -339,6 +361,7 @@ proxy-groups:
     name: JP AUTO
     type: url-test
     interval: 300
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -346,6 +369,7 @@ proxy-groups:
     name: US AUTO
     type: url-test
     interval: 300
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -353,6 +377,7 @@ proxy-groups:
     name: KR AUTO
     type: url-test
     interval: 300
+    max-failed-times: 3
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -360,6 +385,7 @@ proxy-groups:
     name: GA AUTO
     type: url-test
     interval: 300
+    max-failed-times: 3
  
 rules:
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
