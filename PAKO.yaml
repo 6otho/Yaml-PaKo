@@ -72,14 +72,14 @@ dns:
 
 rule-providers:
   private:
-    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_domain:
-    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
     path: ./ruleset/cn_domain.yaml
     behavior: domain
     interval: 86400
@@ -107,21 +107,21 @@ rule-providers:
     format: yaml
     type: http
   google_domain:
-    url: https://ghfast.top/https://raw.githubusercontent.com/6otho/yamal-pako/refs/heads/main/google.yaml
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/yamal-pako/refs/heads/main/google.yaml
     path: ./ruleset/google_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   geolocation-!cn:
-    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
     path: ./ruleset/geolocation-!cn.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_ip:
-    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
     path: ./ruleset/cn_ip.yaml
     behavior: ipcidr
     interval: 86400
@@ -135,7 +135,7 @@ rule-providers:
     format: yaml
     type: http
   google_ip:
-    url: https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
     path: ./ruleset/google_ip.yaml
     behavior: ipcidr
     interval: 86400
@@ -199,7 +199,7 @@ rule-providers:
     type: http
   dns_leak:
     type: http
-    url: https://ghfast.top/https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
     path: ./ruleset/dns_leak.yaml
     behavior: classical
     interval: 86400
@@ -214,21 +214,21 @@ rule-providers:
     
 
 proxy-groups:
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-  #- icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  #- icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PROXY
     type: select
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
     name: AIGC
     type: select
     interval: 300
@@ -241,7 +241,7 @@ proxy-groups:
       - PROXY
       - AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     name: Telegram
     type: select
     interval: 300
@@ -254,7 +254,7 @@ proxy-groups:
       - KR AUTO
       - PROXY
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     name: Google
     type: select
     interval: 300
@@ -267,7 +267,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     name: Spotify
     type: select
     interval: 300
@@ -280,7 +280,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     name: Netflix
     type: select
     interval: 300
@@ -293,7 +293,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
     name: TikTok
     type: select
     interval: 300
@@ -306,7 +306,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     name: Youtube
     type: select
     interval: 300
@@ -319,7 +319,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     name: Steam
     type: select
     interval: 300
@@ -332,7 +332,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
     name: Mainland
     type: select
     interval: 300
@@ -345,7 +345,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)香港|Hong Kong|HK|🇭🇰
@@ -353,7 +353,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)新加坡|Singapore|🇸🇬
@@ -361,7 +361,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)日本|Japan|🇯🇵
@@ -369,7 +369,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)美国|USA|🇺🇸
@@ -377,7 +377,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
@@ -385,7 +385,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|🇸🇬|日本|Japan|🇯🇵|美国|USA|🇺🇸|韩国|South Korea|🇰🇷|香港|Hong Kong|HK|🇭🇰)).*$
@@ -424,4 +424,3 @@ rules:
   - "RULE-SET,dns_leak,PROXY"
   - "GEOIP,CN,DIRECT"
   - "MATCH,PROXY"
-
