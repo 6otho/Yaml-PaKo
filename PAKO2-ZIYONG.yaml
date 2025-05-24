@@ -414,9 +414,10 @@ rules:
   - "RULE-SET,emby_domain,Netflix"
   - "RULE-SET,bing,Google"
   - "RULE-SET,steam,Steam"
+  - "MATCH,PAKO"
   - "RULE-SET,geolocation-!cn,PAKO"
   - "RULE-SET,cn_domain,Mainland"
   - "RULE-SET,cn_ip,Mainland"
   - "RULE-SET,dns_leak,PAKO"
   - "GEOIP,CN,Mainland"
-  - "MATCH,PAKO"
+  
