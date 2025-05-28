@@ -388,6 +388,7 @@ proxy-groups:
     max-failed-times: 3
  
 rules:
+  - "DOMAIN-SUFFIX,zeze.teracloud.jp,DIRECT"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,DIRECT"
