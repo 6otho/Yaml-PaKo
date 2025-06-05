@@ -199,7 +199,7 @@ rule-providers:
     type: http
   dns_leak:
     type: http
-    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/loon-/refs/heads/main/Prevent_DNS_Leaks.list
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/Rule/Prevent_DNS_Leaks.list
     path: ./ruleset/dns_leak.yaml
     behavior: classical
     interval: 86400
