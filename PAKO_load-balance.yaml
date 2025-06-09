@@ -220,14 +220,14 @@ proxy-groups:
     name: PAKO
     type: select
     max-failed-times: 3
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Apple.png
     name: AIGC
     type: select
     interval: 300
@@ -253,7 +253,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - PAKO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Scholar.png
     name: Google
     type: select
     interval: 300
@@ -292,7 +292,7 @@ proxy-groups:
       - TW AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Bili.png
     name: TikTok
     type: select
     interval: 300
@@ -319,7 +319,7 @@ proxy-groups:
       - TW AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Game.png
     name: Steam
     type: select
     interval: 300
