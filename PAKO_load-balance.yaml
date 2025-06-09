@@ -333,7 +333,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/CN.png
     name: Mainland
     type: select
     interval: 300
