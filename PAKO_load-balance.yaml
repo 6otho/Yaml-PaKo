@@ -214,7 +214,7 @@ rule-providers:
 
 proxy-groups:
   #- icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Unicorn.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: PAKO
@@ -240,7 +240,7 @@ proxy-groups:
       - KR AUTO
       - PAKO
       - AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Telegram.png
     name: Telegram
     type: select
     interval: 300
@@ -266,7 +266,7 @@ proxy-groups:
       - TW AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Music.png
     name: Spotify
     type: select
     interval: 300
@@ -279,7 +279,7 @@ proxy-groups:
       - TW AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Netflix.png
     name: Netflix
     type: select
     interval: 300
@@ -306,7 +306,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/YouTube.png
     name: Youtube
     type: select
     interval: 300
