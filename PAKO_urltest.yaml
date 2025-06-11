@@ -1,5 +1,7 @@
 # PAKO_urltest
 metadata:
+  version: "2025.06"
+  updated: "2025-06-11"
 owner: "PAKO"
 note: "urltest"
 mixed-port: 7897
