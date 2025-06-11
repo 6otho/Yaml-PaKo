@@ -1,4 +1,9 @@
 # PAKO fallback
+metadata:
+  version: "2025.06"
+  updated: "2025-06-11"
+owner: "PAKO"
+note: "fallback"
 mixed-port: 7897
 allow-lan: true
 mode: rule
