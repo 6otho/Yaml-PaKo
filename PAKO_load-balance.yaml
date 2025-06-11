@@ -1,4 +1,9 @@
 # PAKO_load-balance
+metadata:
+  version: "2025.06"
+  updated: "2025-06-11"
+owner: "PAKO"
+note: "load-balance"
 mixed-port: 7897
 allow-lan: true
 mode: rule
