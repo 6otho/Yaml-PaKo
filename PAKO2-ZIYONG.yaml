@@ -343,48 +343,54 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)香港|Hong Kong|HK|🇭🇰
     name: HK AUTO
-    type: url-test
+    type: fallback
     interval: 300
+    lazy: true
     max-failed-times: 3
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)新加坡|Singapore|🇸🇬
     name: SG AUTO
-    type: url-test
+    type: fallback
     interval: 300
+    lazy: true
     max-failed-times: 3
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)日本|Japan|🇯🇵
     name: JP AUTO
-    type: url-test
+    type: fallback
     interval: 300
+    lazy: true
     max-failed-times: 3
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)美国|USA|🇺🇸
     name: US AUTO
-    type: url-test
+    type: fallback
     interval: 300
+    lazy: true
     max-failed-times: 3
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)韩国|South Korea|🇰🇷
     name: KR AUTO
-    type: url-test
+    type: fallback
     interval: 300
+    lazy: true
     max-failed-times: 3
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|🇸🇬|日本|Japan|🇯🇵|美国|USA|🇺🇸|韩国|South Korea|🇰🇷|香港|Hong Kong|HK|🇭🇰)).*$
     name: GA AUTO
-    type: url-test
+    type: fallback
     interval: 300
+    lazy: true
     max-failed-times: 3
  
 rules:
