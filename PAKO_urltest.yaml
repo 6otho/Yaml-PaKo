@@ -351,9 +351,10 @@ proxy-groups:
     name: HK AUTO
     type: url-test
     interval: 300
-    lazy: true
+    lazy: false
     max-failed-times: 3
     tolerance: 50
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -361,9 +362,10 @@ proxy-groups:
     name: SG AUTO
     type: url-test
     interval: 300
-    lazy: true
+    lazy: false
     max-failed-times: 3
     tolerance: 50
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -371,9 +373,10 @@ proxy-groups:
     name: JP AUTO
     type: url-test
     interval: 300
-    lazy: true
+    lazy: false
     max-failed-times: 3
     tolerance: 50
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -381,9 +384,10 @@ proxy-groups:
     name: US AUTO
     type: url-test
     interval: 300
-    lazy: true
+    lazy: false
     max-failed-times: 3
     tolerance: 50
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -391,9 +395,10 @@ proxy-groups:
     name: KR AUTO
     type: url-test
     interval: 300
-    lazy: true
+    lazy: false
     max-failed-times: 3
     tolerance: 50
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -401,9 +406,10 @@ proxy-groups:
     name: GA AUTO
     type: url-test
     interval: 300
-    lazy: true
+    lazy: false
     max-failed-times: 3
     tolerance: 50
+    url: http://www.gstatic.com/generate_204
  
 rules:
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
