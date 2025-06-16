@@ -361,9 +361,10 @@ proxy-groups:
     name: HK AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/TW.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -371,9 +372,10 @@ proxy-groups:
     name: TW AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -381,9 +383,10 @@ proxy-groups:
     name: SG AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -391,9 +394,10 @@ proxy-groups:
     name: JP AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -401,9 +405,10 @@ proxy-groups:
     name: US AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -411,9 +416,10 @@ proxy-groups:
     name: KR AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Global.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -421,9 +427,10 @@ proxy-groups:
     name: GA AUTO
     type: load-balance
     interval: 300
-    lazy: true
+    lazy: false
     strategy: consistent-hashing
     max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 rules:
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
