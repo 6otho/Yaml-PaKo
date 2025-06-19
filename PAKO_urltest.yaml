@@ -232,7 +232,6 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PAKO
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
