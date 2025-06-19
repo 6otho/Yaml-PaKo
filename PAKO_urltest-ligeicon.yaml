@@ -223,7 +223,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PAKO
+    name: PROXY
     type: select
     max-failed-times: 3
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(5).png
@@ -416,11 +416,11 @@ rules:
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,DIRECT"
   - "DOMAIN-SUFFIX,dwq.emby.moe,DIRECT"
-  - "DOMAIN,domainname,PAKO"
+  - "DOMAIN,domainname,PROXY"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
   - "RULE-SET,tiktok,TikTok"
-  - "DOMAIN-SUFFIX,speedtest.net,PAKO"
+  - "DOMAIN-SUFFIX,speedtest.net,PROXY"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,claude,AIGC"
   - "RULE-SET,bard,AIGC"
@@ -433,15 +433,15 @@ rules:
   - "RULE-SET,google_ip,Google"
   - "RULE-SET,telegram_domain,Telegram"
   - "RULE-SET,telegram_ip,Telegram"
-  - "RULE-SET,private,PAKO"
+  - "RULE-SET,private,PROXY"
   - "RULE-SET,netflix_domain,Netflix"
   - "RULE-SET,emby_domain,Netflix"
   - "RULE-SET,bing,Google"
   - "RULE-SET,steam,Steam"
-  - "RULE-SET,geolocation-!cn,PAKO"
+  - "RULE-SET,geolocation-!cn,PROXY"
   - "RULE-SET,cn_domain,Mainland"
   - "RULE-SET,cn_ip,Mainland"
-  - "RULE-SET,dns_leak,PAKO"
+  - "RULE-SET,dns_leak,PROXY"
   - "GEOIP,CN,Mainland"
-  - "MATCH,PAKO"
+  - "MATCH,PROXY"
   
