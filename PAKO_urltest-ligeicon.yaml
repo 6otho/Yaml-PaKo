@@ -1,8 +1,8 @@
-# PROXY_urltest-ligeicon
+# PAKO_urltest-ligeicon
 metadata:
   version: "2025.06"
   updated: "2025-06"
-owner: "PROXY"
+owner: "PAKO"
 note: "urltest-lige-icon"
 mixed-port: 7897
 allow-lan: true
