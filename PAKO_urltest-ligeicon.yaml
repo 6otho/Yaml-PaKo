@@ -233,7 +233,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/ChatGPT(1).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
     name: AIGC
     type: select
     interval: 300
