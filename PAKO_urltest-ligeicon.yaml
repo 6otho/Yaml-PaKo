@@ -226,6 +226,12 @@ proxy-groups:
     name: PROXY
     type: select
     max-failed-times: 3
+    proxies:
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+      - KR AUTO
+      - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(5).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
