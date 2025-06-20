@@ -94,7 +94,7 @@ rule-providers:
   douyin_domain:
     url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DouYin/DouYin.yaml
     path: ./ruleset/douyin_domain.yaml
-    behavior: domain
+    behavior: classical
     interval: 86400
     format: yaml
     type: http
