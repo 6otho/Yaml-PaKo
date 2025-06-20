@@ -245,7 +245,7 @@ proxy-groups:
       - KR AUTO
       - PROXY
       - AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/telegram(blue1).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     name: Telegram
     type: select
     interval: 300
