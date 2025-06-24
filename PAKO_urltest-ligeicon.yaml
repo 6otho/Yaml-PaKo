@@ -230,7 +230,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PROXY
+    name: FINAL
     type: select
     max-failed-times: 3
     proxies:
@@ -256,7 +256,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
+      - FINAL
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     name: Telegram
@@ -269,14 +269,14 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-      - PROXY
+      - FINAL
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
     name: Google
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - FINAL
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -288,7 +288,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - FINAL
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -300,7 +300,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - FINAL
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -312,7 +312,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - FINAL
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -325,7 +325,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - FINAL
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -337,7 +337,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - FINAL
       - DIRECT
       - SG AUTO
       - JP AUTO
@@ -350,7 +350,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - DIRECT
-      - PROXY
+      - FINAL
       - SG AUTO
       - JP AUTO
       - US AUTO
@@ -430,11 +430,11 @@ rules:
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,DIRECT"
   - "DOMAIN-SUFFIX,dwq.emby.moe,DIRECT"
-  - "DOMAIN,domainname,PROXY"
+  - "DOMAIN,domainname,FINAL"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
   - "RULE-SET,tiktok,TikTok"
-  - "DOMAIN-SUFFIX,speedtest.net,PROXY"
+  - "DOMAIN-SUFFIX,speedtest.net,FINAL"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,claude,AIGC"
   - "RULE-SET,bard,AIGC"
@@ -447,15 +447,15 @@ rules:
   - "RULE-SET,google_ip,Google"
   - "RULE-SET,telegram_domain,Telegram"
   - "RULE-SET,telegram_ip,Telegram"
-  - "RULE-SET,private,PROXY"
+  - "RULE-SET,private,FINAL"
   - "RULE-SET,netflix_domain,Netflix"
   - "RULE-SET,emby_domain,Netflix"
   - "RULE-SET,bing,Google"
   - "RULE-SET,steam,Steam"
-  - "RULE-SET,geolocation-!cn,PROXY"
+  - "RULE-SET,geolocation-!cn,FINAL"
   - "RULE-SET,cn_domain,Mainland"
   - "RULE-SET,cn_ip,Mainland"
-  - "RULE-SET,dns_leak,PROXY"
+  - "RULE-SET,dns_leak,FINAL"
   - "GEOIP,CN,Mainland"
-  - "MATCH,PROXY"
+  - "MATCH,FINAL"
   
