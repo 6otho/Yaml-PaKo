@@ -305,7 +305,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok((2).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
     name: TikTok
     type: select
     interval: 300
