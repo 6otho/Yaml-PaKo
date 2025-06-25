@@ -226,7 +226,7 @@ rule-providers:
     type: http
 
 proxy-groups:
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: FINAL
@@ -238,14 +238,14 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(3).png
+  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(5).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/ChatGPT.png
     name: AIGC
     type: select
     interval: 300
@@ -257,7 +257,7 @@ proxy-groups:
       - KR AUTO
       - FINAL
       - AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/telegram.png
     name: Telegram
     type: select
     interval: 300
@@ -269,7 +269,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - FINAL
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/google.png
     name: Google
     type: select
     interval: 300
@@ -281,7 +281,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/spotify.png
     name: Spotify
     type: select
     interval: 300
@@ -293,7 +293,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix.png
     name: Netflix
     type: select
     interval: 300
@@ -305,7 +305,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok.png
     name: TikTok
     type: select
     interval: 300
@@ -318,8 +318,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
-    name: Youtube
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Youtube.png
     type: select
     interval: 300
     max-failed-times: 3
@@ -330,7 +329,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(1).png
     name: Steam
     type: select
     interval: 300
