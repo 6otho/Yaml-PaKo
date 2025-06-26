@@ -281,7 +281,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
+  - icon: https://gh-proxy.com/raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
     name: Spotify
     type: select
     interval: 300
