@@ -364,7 +364,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)香港|Hong Kong|HK|🇭🇰
+    filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
     name: HK AUTO
     type: fallback
     interval: 300
@@ -384,7 +384,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)新加坡|Singapore|🇸🇬
+    filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
     name: SG AUTO
     type: fallback
     interval: 300
@@ -394,7 +394,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)日本|Japan|🇯🇵
+    filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
     name: JP AUTO
     type: fallback
     interval: 300
@@ -404,7 +404,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)美国|USA|🇺🇸
+    filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
     name: US AUTO
     type: fallback
     interval: 300
@@ -414,7 +414,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)韩国|South Korea|🇰🇷
+    filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
     name: KR AUTO
     type: fallback
     interval: 300
@@ -424,7 +424,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/refs/heads/master/Global.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)^(?!.*(?:新加坡|Singapore|🇸🇬|日本|Japan|🇯🇵|美国|USA|🇺🇸|韩国|South Korea|🇰🇷|香港|Hong Kong|HK|🇭🇰)).*$
+    filter: (?i)^(?!.*\b(新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR|台湾|TaiWan|TW|tw)\b).+$
     name: GA AUTO
     type: fallback
     interval: 300
