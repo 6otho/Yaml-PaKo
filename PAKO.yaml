@@ -361,64 +361,64 @@ proxy-groups:
       - KR AUTO
       - GA AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-  include-all: true
-  exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-  filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
-  name: HK AUTO
-  type: url-test
-  interval: 300
-  max-failed-times: 3
-  url: http://www.gstatic.com/generate_204
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
+    name: HK AUTO
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-  include-all: true
-  exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-  filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
-  name: SG AUTO
-  type: url-test
-  interval: 300
-  max-failed-times: 3
-  url: http://www.gstatic.com/generate_204
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
+    name: SG AUTO
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-  include-all: true
-  exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-  filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
-  name: JP AUTO
-  type: url-test
-  interval: 300
-  max-failed-times: 3
-  url: http://www.gstatic.com/generate_204
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
+    name: JP AUTO
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-  include-all: true
-  exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-  filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
-  name: US AUTO
-  type: url-test
-  interval: 300
-  max-failed-times: 3
-  url: http://www.gstatic.com/generate_204
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
+    name: US AUTO
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-  include-all: true
-  exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-  filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
-  name: KR AUTO
-  type: url-test
-  interval: 300
-  max-failed-times: 3
-  url: http://www.gstatic.com/generate_204
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
+    name: KR AUTO
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
-  include-all: true
-  exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-  filter: (?i)^(?!.*\b(新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)\b).+$
-  name: GA AUTO
-  type: url-test
-  interval: 300
-  max-failed-times: 3
-  url: http://www.gstatic.com/generate_204
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)^(?!.*\b(新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)\b).+$
+    name: GA AUTO
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.gstatic.com/generate_204
 
 rules:
   - "RULE-SET,douyin_domain,Mainland"
