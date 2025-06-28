@@ -236,6 +236,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(2).png
     include-all: true
@@ -254,6 +255,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
       - FINAL
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
@@ -267,6 +269,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
       - FINAL
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
     name: Google
@@ -280,6 +283,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
   - icon: https://gh-proxy.com/raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
     name: Spotify
     type: select
@@ -292,6 +296,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
     name: Netflix
     type: select
@@ -304,6 +309,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
     name: TikTok
     type: select
@@ -317,6 +323,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
+      - TW AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
     name: Youtube
     type: select
@@ -329,6 +336,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
     name: Steam
     type: select
@@ -341,6 +349,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
     name: Mainland
     type: select
@@ -353,6 +362,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
       - GA AUTO
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
@@ -360,6 +370,17 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
     name: HK AUTO
+    type: url-test
+    interval: 300
+    lazy: false
+    max-failed-times: 3
+    tolerance: 50
+    url: http://www.gstatic.com/generate_204
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(3).png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)(?:\b(台湾|TaiWan|TW)\b|🇹🇼)
+    name: TW AUTO
     type: url-test
     interval: 300
     lazy: false
