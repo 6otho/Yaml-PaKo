@@ -431,7 +431,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/master/Global.png
+  - icon: https://camo.githubusercontent.com/929c6b06389c5ebbe66dd6db6425a86e187c98142b21cf5effb5abad6176bc5a/68747470733a2f2f666173746c792e6a7364656c6976722e6e65742f67682f4f727a2d332f6d696e69406d61737465722f436f6c6f722f476c6f62616c2e706e67
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
