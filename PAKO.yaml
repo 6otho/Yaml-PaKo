@@ -435,6 +435,7 @@ rules:
   - "DOMAIN-SUFFIX,chatgpt.com,AIGC"
   - "DOMAIN-SUFFIX,api.openai.com,AIGC"
   - "DOMAIN-SUFFIX,auth0.com,AIGC"
+  - "DOMAIN-SUFFIX,adobe.io,REJECT"
   - "RULE-SET,google_domain,Google"
   - "RULE-SET,google_ip,Google"
   - "RULE-SET,telegram_domain,Telegram"
