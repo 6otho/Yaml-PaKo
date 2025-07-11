@@ -225,8 +225,8 @@ rule-providers:
     format: yaml
     type: http
   steamCN:
-    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    path: ./ruleset/SteamCN.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.yaml
+    path: ./ruleset/SteamCN.yaml
     behavior: classical
     interval: 86400
     format: yaml
