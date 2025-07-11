@@ -224,6 +224,13 @@ rule-providers:
     interval: 86400
     format: yaml
     type: http
+  steamCN:
+    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
     
 
 proxy-groups:
@@ -445,6 +452,7 @@ rules:
   - "RULE-SET,emby_domain,Netflix"
   - "RULE-SET,bing,Google"
   - "RULE-SET,steam,Steam"
+  - "RULE-SET,steamCN,DIRECT"
   - "RULE-SET,geolocation-!cn,PROXY"
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
