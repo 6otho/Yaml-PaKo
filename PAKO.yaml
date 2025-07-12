@@ -463,7 +463,7 @@ rules:
   - "RULE-SET,geolocation-!cn,PROXY"
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
-  - "RULE-SET,Download,DIRECT"
+  - "RULE-SET,download,DIRECT"
   - "RULE-SET,dns_leak,PROXY"
   - "GEOIP,CN,DIRECT"
   - "MATCH,PROXY"
