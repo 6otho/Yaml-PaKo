@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "douyin.com",
+        "douyincdn.com",
+        "douyinpic.com",
+        "douyinstatic.com",
+        "douyinvod.com",
+        "amemv.com",
+        "iesdouyin.com",
+        "byteimg.com",
+        "byted-static.com",
+        "bytedance.com",
+        "bytedance.net",
+        "bytedns.net",
+        "bytednsdoc.com",
+        "bytegoofy.com",
+        "bytescm.com",
+        "bytetos.com",
+        "bytexservice.com"
+      ]
+    },
+    {
+      "domain": [
+        "v.douyin.com",
+        "live.douyin.com",
+        "content.douyin.com",
+        "media.douyin.com",
+        "game.douyin.com",
+        "ad.douyin.com",
+        "cloud.douyin.com",
+        "partner.douyin.com",
+        "pay.douyin.com",
+        "sso.douyin.com",
+        "frontier.douyin.com",
+        "g.douyin.com",
+        "j.douyin.com",
+        "d.douyin.com",
+        "l.douyin.com",
+        "www.douyin.com",
+        "broadcast.douyin.com",
+        "developer.douyin.com",
+        "travel.douyin.com",
+        "s.douyin.com",
+        "i.douyin.com",
+        "e.douyin.com",
+        "business.douyin.com",
+        "search.douyin.com",
+        "music.douyin.com",
+        "school.douyin.com",
+        "n.douyin.com",
+        "tos.douyin.com"
+      ]
+    }
+  ]
+}
