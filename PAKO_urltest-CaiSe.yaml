@@ -183,7 +183,7 @@ rule-providers:
     format: yaml
     type: http
   openai:
-    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
+    url: https://gh.ikuu.eu.org/https://rule.kelee.one/Clash/OpenAI.yaml
     path: ./ruleset/openai.yaml
     behavior: classical
     interval: 86400
