@@ -444,6 +444,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
  
 rules:
+  - "DOMAIN-SUFFIX,subr.v5oo.eu.org,FINAL"
   - "DOMAIN-SUFFIX,gemini.google.com,AIGC"
   - "DOMAIN-SUFFIX,douyin.com,DIRECT"
   - "RULE-SET,douyin_domain,Mainland"
