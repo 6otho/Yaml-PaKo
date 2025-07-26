@@ -120,7 +120,7 @@ rule-providers:
     format: yaml
     type: http
   google_domain:
-    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Yaml-PaKo/refs/heads/main/google.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/6otho/Yaml-PaKo/refs/heads/main/google.yaml
     path: ./ruleset/google_domain.yaml
     behavior: domain
     interval: 86400
