@@ -19,7 +19,7 @@ enable-process: true
 find-process-mode: strict
 global-client-fingerprint: chrome
 keep-alive-interval: 15
-geo-auto-update: true
+geo-自動選擇-update: true
 geo-update-interval: 24
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
@@ -37,8 +37,8 @@ tun:
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-  auto-route: true
-  auto-detect-interface: true
+  自動選擇-route: true
+  自動選擇-detect-interface: true
 dns:
   enable: true
   ipv6: true
@@ -232,16 +232,16 @@ proxy-groups:
     type: select
     max-failed-times: 3
     proxies:
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
-      - AUTO
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
+      - 自動選擇
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: AUTO
+    name: 自動選擇
     type: url-test
     interval: 300
     max-failed-times: 3
@@ -251,25 +251,25 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
       - FINAL
-      - AUTO
+      - 自動選擇
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     name: Telegram
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 香港自動
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
       - FINAL
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
     name: Google
@@ -278,12 +278,12 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 香港自動
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
   - icon: https://gh-proxy.com/raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
     name: Spotify
     type: select
@@ -291,12 +291,12 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 香港自動
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
     name: Netflix
     type: select
@@ -304,12 +304,12 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 香港自動
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
     name: TikTok
     type: select
@@ -317,13 +317,13 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
-      - TW AUTO
+      - 香港自動
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - GA 自動選擇
+      - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
     name: Youtube
     type: select
@@ -331,12 +331,12 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 香港自動
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
     name: Steam
     type: select
@@ -345,11 +345,11 @@ proxy-groups:
     proxies:
       - FINAL
       - DIRECT
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
     name: Mainland
     type: select
@@ -358,18 +358,18 @@ proxy-groups:
     proxies:
       - DIRECT
       - FINAL
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - TW AUTO
-      - GA AUTO
+      - 新國自動
+      - 日本自動
+      - 美國自動
+      - 韓國自動
+      - 台灣自動
+      - GA 自動選擇
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
-    name: HK AUTO
+    name: 香港自動
     type: url-test
     interval: 300
     lazy: false
@@ -380,7 +380,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(台湾|TaiWan|TW)\b|🇹🇼)
-    name: TW AUTO
+    name: 台灣自動
     type: url-test
     interval: 300
     lazy: false
@@ -391,7 +391,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
-    name: SG AUTO
+    name: 新國自動
     type: url-test
     interval: 300
     lazy: false
@@ -402,7 +402,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
-    name: JP AUTO
+    name: 日本自動
     type: url-test
     interval: 300
     lazy: false
@@ -412,8 +412,8 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
-    name: US AUTO
+    filter: (?i)(?:\b(美國|USA|United\s*States|US)\b|🇺🇸)
+    name: 美國自動
     type: url-test
     interval: 300
     lazy: false
@@ -423,8 +423,8 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Korea.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
-    name: KR AUTO
+    filter: (?i)(?:\b(韓國|South\s*Korea|KOR)\b|🇰🇷)
+    name: 韓國自動
     type: url-test
     interval: 300
     lazy: false
@@ -434,8 +434,8 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/EuropeanUnion(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
-    name: GA AUTO
+    filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美國|USA|United\s*States|US|香港|HK|HKG|韓國|South\s*Korea|KOR)).+$
+    name: GA 自動選擇
     type: url-test
     interval: 300
     lazy: false
