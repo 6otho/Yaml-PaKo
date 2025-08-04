@@ -351,7 +351,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
-    name: Mainland
+    name: 中國直連
     type: select
     interval: 300
     max-failed-times: 3
@@ -449,7 +449,7 @@ rules:
   - "DOMAIN-SUFFIX,subr.v5oo.eu.org,手動選擇"
   - "DOMAIN-SUFFIX,gemini.google.com,AIGC"
   - "DOMAIN-SUFFIX,douyin.com,DIRECT"
-  - "RULE-SET,douyin_domain,Mainland"
+  - "RULE-SET,douyin_domain,中國直連"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,DIRECT"
@@ -477,9 +477,9 @@ rules:
   - "RULE-SET,bing,Google"
   - "RULE-SET,steam,Steam"
   - "RULE-SET,geolocation-!cn,手動選擇"
-  - "RULE-SET,cn_domain,Mainland"
-  - "RULE-SET,cn_ip,Mainland"
+  - "RULE-SET,cn_domain,中國直連"
+  - "RULE-SET,cn_ip,中國直連"
   - "RULE-SET,dns_leak,手動選擇"
-  - "GEOIP,CN,Mainland"
+  - "GEOIP,CN,中國直連"
   - "MATCH,手動選擇"
   
