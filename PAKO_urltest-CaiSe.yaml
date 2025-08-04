@@ -322,7 +322,7 @@ proxy-groups:
       - 日本自動
       - 美國自動
       - 韓國自動
-      - GA 自動選擇
+      - 全球自動
       - 台灣自動
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
     name: Youtube
@@ -363,7 +363,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
-      - GA 自動選擇
+      - 全球自動
 
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
     include-all: true
@@ -435,7 +435,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美國|USA|United\s*States|US|香港|HK|HKG|韓國|South\s*Korea|KOR)).+$
-    name: GA 自動選擇
+    name: 全球自動
     type: url-test
     interval: 300
     lazy: false
