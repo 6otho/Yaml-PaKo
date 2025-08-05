@@ -19,7 +19,7 @@ enable-process: true
 find-process-mode: strict
 global-client-fingerprint: chrome
 keep-alive-interval: 15
-geo-自動選擇-update: true
+geo-auto-update: true
 geo-update-interval: 24
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
@@ -37,8 +37,8 @@ tun:
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-  自動選擇-route: true
-  自動選擇-detect-interface: true
+  auto-route: true
+  auto-detect-interface: true
 dns:
   enable: true
   ipv6: true
