@@ -78,21 +78,21 @@ dns:
     
 rule-providers:
   private:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
+    url: https://gh.iknn.eu.org/https://https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_domain:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
     path: ./ruleset/cn_domain.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   douyin_domain:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DouYin/DouYin.yaml
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DouYin/DouYin.yaml
     path: ./ruleset/douyin_domain.yaml
     behavior: classical
     interval: 86400
@@ -127,14 +127,14 @@ rule-providers:
     format: yaml
     type: http
   geolocation-!cn:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
     path: ./ruleset/geolocation-!cn.yaml
     behavior: domain
     interval: 86400
     format: yaml
     type: http
   cn_ip:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
     path: ./ruleset/cn_ip.yaml
     behavior: ipcidr
     interval: 86400
@@ -148,7 +148,7 @@ rule-providers:
     format: yaml
     type: http
   google_ip:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
     path: ./ruleset/google_ip.yaml
     behavior: ipcidr
     interval: 86400
@@ -183,7 +183,7 @@ rule-providers:
     format: yaml
     type: http
   openai:
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/6otho/Yaml-PaKo/refs/heads/main/allAi.yaml
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Yaml-PaKo/refs/heads/main/allAi.yaml
     path: ./ruleset/openai.yaml
     behavior: classical
     interval: 86400
@@ -212,7 +212,7 @@ rule-providers:
     type: http
   dns_leak:
     type: http
-    url: https://gh.iknn.eu.org/raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/Rule/Prevent_DNS_Leaks.list
+    url: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/Rule/Prevent_DNS_Leaks.list
     path: ./ruleset/dns_leak.yaml
     behavior: classical
     interval: 86400
@@ -226,7 +226,7 @@ rule-providers:
     type: http
 
 proxy-groups:
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/loonxsss.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/loonxsss.png
     include-all: true
     name: 手動選擇
     type: select
@@ -238,14 +238,14 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 自動選擇
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(2).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: 自動選擇
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
     name: AIGC
     type: select
     interval: 300
@@ -258,7 +258,7 @@ proxy-groups:
       - 台灣自動
       - 手動選擇
       - 自動選擇
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     name: Telegram
     type: select
     interval: 300
@@ -271,7 +271,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 手動選擇
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
     name: Google
     type: select
     interval: 300
@@ -297,7 +297,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
     name: Netflix
     type: select
     interval: 300
@@ -310,7 +310,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
     name: TikTok
     type: select
     interval: 300
@@ -324,7 +324,7 @@ proxy-groups:
       - 韓國自動
       - 全球自動
       - 台灣自動
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
     name: Youtube
     type: select
     interval: 300
@@ -337,7 +337,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
     name: Steam
     type: select
     interval: 300
@@ -350,7 +350,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
     name: 中國直連
     type: select
     interval: 300
@@ -365,7 +365,7 @@ proxy-groups:
       - 台灣自動
       - 全球自動
 
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
@@ -376,7 +376,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(3).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(台湾|TaiWan|TW)\b|🇹🇼)
@@ -387,7 +387,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/singapore(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/singapore(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
@@ -398,7 +398,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Japan.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Japan.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
@@ -409,7 +409,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/US.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(美國|USA|United\s*States|US)\b|🇺🇸)
@@ -420,7 +420,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Korea.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Korea.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(韓國|South\s*Korea|KOR)\b|🇰🇷)
@@ -431,7 +431,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/EuropeanUnion(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/EuropeanUnion(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美國|USA|United\s*States|US|香港|HK|HKG|韓國|South\s*Korea|KOR)).+$
