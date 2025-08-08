@@ -444,6 +444,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
  
 rules:
+  - "DOMAIN-SUFFIX,shsiis.cloudfisher.cc,手動選擇"
   - "DOMAIN-SUFFIX,emby.zn.al,手動選擇"
   - "DOMAIN-SUFFIX,github.com,手動選擇"
   - "DOMAIN-SUFFIX,subr.v5oo.eu.org,手動選擇"
