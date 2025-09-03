@@ -232,6 +232,7 @@ proxy-groups:
     type: select
     max-failed-times: 3
     proxies:
+      - 香港自動
       - 新國自動
       - 日本自動
       - 美國自動
@@ -251,6 +252,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
     proxies:
+      - 香港自動
       - 新國自動
       - 日本自動
       - 美國自動
