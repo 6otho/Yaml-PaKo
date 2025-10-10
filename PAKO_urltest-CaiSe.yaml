@@ -287,7 +287,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
   - icon: https://gh-proxy.com/raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
-    name: 聲破天軟件
+    name: 聲破天音樂
     type: select
     interval: 300
     max-failed-times: 3
@@ -458,7 +458,7 @@ rules:
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,手動選擇"
   - "DOMAIN-SUFFIX,dwq.emby.moe,手動選擇"
   - "DOMAIN,domainname,手動選擇"
-  - "RULE-SET,Spotify_domain,聲破天軟件"
+  - "RULE-SET,Spotify_domain,聲破天音樂"
   - "RULE-SET,youtube_domain,油管軟件"
   - "RULE-SET,tiktok,TK軟件"
   - "DOMAIN-SUFFIX,speedtest.net,手動選擇"
