@@ -246,7 +246,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/chxm1023/ChatGPT4.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/ChatGPT4.png
     name: AIGC
     type: select
     interval: 300
