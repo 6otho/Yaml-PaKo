@@ -247,7 +247,7 @@ proxy-groups:
     interval: 300
     max-failed-times: 3
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/ChatGPT4.png
-    name: AIGC
+    name: AI智能
     type: select
     interval: 300
     max-failed-times: 3
@@ -261,7 +261,7 @@ proxy-groups:
       - 手動選擇
       - 自動選擇
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-    name: Telegram
+    name: 電報軟件
     type: select
     interval: 300
     max-failed-times: 3
@@ -274,7 +274,7 @@ proxy-groups:
       - 台灣自動
       - 手動選擇
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
-    name: Google
+    name: 谷歌搜索
     type: select
     interval: 300
     max-failed-times: 3
@@ -287,7 +287,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
   - icon: https://gh-proxy.com/raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
-    name: Spotify
+    name: 聲破天軟件
     type: select
     interval: 300
     max-failed-times: 3
@@ -300,7 +300,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
-    name: Netflix
+    name: 奈飛電影
     type: select
     interval: 300
     max-failed-times: 3
@@ -313,7 +313,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
-    name: TikTok
+    name: TK軟件
     type: select
     interval: 300
     max-failed-times: 3
@@ -327,7 +327,7 @@ proxy-groups:
       - 全球自動
       - 台灣自動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
-    name: Youtube
+    name: 油管軟件
     type: select
     interval: 300
     max-failed-times: 3
@@ -340,7 +340,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
-    name: Steam
+    name: 游戲軟件
     type: select
     interval: 300
     max-failed-times: 3
@@ -450,7 +450,7 @@ rules:
   - "DOMAIN-SUFFIX,emby.zn.al,手動選擇"
   - "DOMAIN-SUFFIX,github.com,手動選擇"
   - "DOMAIN-SUFFIX,subr.v5oo.eu.org,手動選擇"
-  - "DOMAIN-SUFFIX,gemini.google.com,AIGC"
+  - "DOMAIN-SUFFIX,gemini.google.com,AI智能"
   - "DOMAIN-SUFFIX,douyin.com,DIRECT"
   - "RULE-SET,douyin_domain,中國直連"
   - "DOMAIN-SUFFIX,agedm.org,手動選擇"
@@ -458,27 +458,27 @@ rules:
   - "DOMAIN-SUFFIX,lite.saturdayvideo.top,手動選擇"
   - "DOMAIN-SUFFIX,dwq.emby.moe,手動選擇"
   - "DOMAIN,domainname,手動選擇"
-  - "RULE-SET,Spotify_domain,Spotify"
-  - "RULE-SET,youtube_domain,Youtube"
-  - "RULE-SET,tiktok,TikTok"
+  - "RULE-SET,Spotify_domain,聲破天軟件"
+  - "RULE-SET,youtube_domain,油管軟件"
+  - "RULE-SET,tiktok,TK軟件"
   - "DOMAIN-SUFFIX,speedtest.net,手動選擇"
-  - "RULE-SET,copilot,AIGC"
-  - "RULE-SET,claude,AIGC"
-  - "RULE-SET,bard,AIGC"
-  - "RULE-SET,openai,AIGC"
-  - "DOMAIN-SUFFIX,chat.openai.com,AIGC"
-  - "DOMAIN-SUFFIX,chatgpt.com,AIGC"
-  - "DOMAIN-SUFFIX,api.openai.com,AIGC"
-  - "DOMAIN-SUFFIX,auth0.com,AIGC"
-  - "RULE-SET,google_domain,Google"
-  - "RULE-SET,google_ip,Google"
-  - "RULE-SET,telegram_domain,Telegram"
-  - "RULE-SET,telegram_ip,Telegram"
+  - "RULE-SET,copilot,AI智能"
+  - "RULE-SET,claude,AI智能"
+  - "RULE-SET,bard,AI智能"
+  - "RULE-SET,openai,AI智能"
+  - "DOMAIN-SUFFIX,chat.openai.com,AI智能"
+  - "DOMAIN-SUFFIX,chatgpt.com,AI智能"
+  - "DOMAIN-SUFFIX,api.openai.com,AI智能"
+  - "DOMAIN-SUFFIX,auth0.com,AI智能"
+  - "RULE-SET,google_domain,谷歌搜索"
+  - "RULE-SET,google_ip,谷歌搜索"
+  - "RULE-SET,telegram_domain,電報軟件"
+  - "RULE-SET,telegram_ip,電報軟件"
   - "RULE-SET,private,手動選擇"
-  - "RULE-SET,netflix_domain,Netflix"
-  - "RULE-SET,emby_domain,Netflix"
-  - "RULE-SET,bing,Google"
-  - "RULE-SET,steam,Steam"
+  - "RULE-SET,netflix_domain,奈飛電影"
+  - "RULE-SET,emby_domain,奈飛電影"
+  - "RULE-SET,bing,谷歌搜索"
+  - "RULE-SET,steam,游戲軟件"
   - "RULE-SET,geolocation-!cn,手動選擇"
   - "RULE-SET,cn_domain,中國直連"
   - "RULE-SET,cn_ip,中國直連"
