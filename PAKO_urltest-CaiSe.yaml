@@ -239,6 +239,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 自動選擇
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -259,6 +260,7 @@ proxy-groups:
       - 台灣自動
       - 手動選擇
       - 自動選擇
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     name: 電報聊天
     type: select
@@ -272,6 +274,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 香港自動
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
     name: 谷歌搜索
     type: select
@@ -285,6 +288,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
+      - 全球手動
   - icon: https://gh-proxy.com/raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
     name: 聲田音樂
     type: select
@@ -298,6 +302,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
     name: 奈飛電影
     type: select
@@ -311,6 +316,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
     name: 外區抖音
     type: select
@@ -323,8 +329,8 @@ proxy-groups:
       - 日本自動
       - 美國自動
       - 韓國自動
-      - 全球自動
-      - 台灣自動
+      - 全球手動
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
     name: 油管軟件
     type: select
@@ -337,7 +343,7 @@ proxy-groups:
       - 日本自動
       - 美國自動
       - 韓國自動
-      - 台灣自動
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
     name: 游戲軟件
     type: select
@@ -351,6 +357,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
+      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
     name: 中國直連
     type: select
@@ -364,7 +371,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 台灣自動
-      - 全球自動
+      - 全球手動
 
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
     include-all: true
@@ -436,13 +443,10 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美國|USA|United\s*States|US|香港|HK|HKG|韓國|South\s*Korea|KOR)).+$
-    name: 全球自動
-    type: url-test
+    name: 全球手動
+    type: select
     interval: 300
-    lazy: false
     max-failed-times: 3
-    tolerance: 50
-    url: http://www.gstatic.com/generate_204
  
 rules:
   - "DOMAIN-SUFFIX,shsiis.cloudfisher.cc,手動選擇"
