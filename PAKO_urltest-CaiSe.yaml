@@ -330,7 +330,6 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 全球手動
-      - 全球手動
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
     name: 油管軟件
     type: select
@@ -486,6 +485,6 @@ rules:
   - "RULE-SET,cn_domain,中國直連"
   - "RULE-SET,cn_ip,中國直連"
   - "RULE-SET,dns_leak,手動選擇"
-  - "GEOIP,CN,中國直連"
+  - "GEOIP,CN,DIRECT"
   - "MATCH,手動選擇"
   
