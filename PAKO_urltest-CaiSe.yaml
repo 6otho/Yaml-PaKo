@@ -485,6 +485,5 @@ rules:
   - "RULE-SET,cn_domain,中國直連"
   - "RULE-SET,cn_ip,中國直連"
   - "RULE-SET,dns_leak,手動選擇"
-  - "GEOIP,CN,DIRECT"
   - "MATCH,手動選擇"
   
