@@ -448,6 +448,7 @@ proxy-groups:
     max-failed-times: 3
  
 rules:
+  - "DOMAIN-SUFFIX,dmm.com,手動選擇"
   - "DOMAIN-SUFFIX,shsiis.cloudfisher.cc,手動選擇"
   - "DOMAIN-SUFFIX,emby.zn.al,手動選擇"
   - "DOMAIN-SUFFIX,github.com,手動選擇"
