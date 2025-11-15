@@ -49,6 +49,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
     - 114.114.114.114
+    - 120.80.80.80
     - system
   fake-ip-filter:
     - "*"
