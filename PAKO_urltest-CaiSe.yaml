@@ -50,6 +50,8 @@ dns:
     - https://dns.alidns.com/dns-query
     - 114.114.114.114
     - system
+  nameserver-policy:
+    'dmm.com': '120.80.80.80'
   fake-ip-filter:
     - "*"
     - "+.lan"
@@ -75,7 +77,6 @@ dns:
     - "+.wpsmail.net"
     - "+.henzanapp.com"
     - "+.pconline.com.cn"
-    
 rule-providers:
   private:
     url: https://gh.iknn.eu.org/https://https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
@@ -224,7 +225,6 @@ rule-providers:
     interval: 86400
     format: yaml
     type: http
-
 proxy-groups:
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/loonxsss.png
     include-all: true
@@ -371,7 +371,6 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 全球手動
-
   - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -446,8 +445,8 @@ proxy-groups:
     type: select
     interval: 300
     max-failed-times: 3
- 
 rules:
+  - "DOMAIN-SUFFIX,dmm.com,日本自動"
   - "DOMAIN-SUFFIX,shsiis.cloudfisher.cc,手動選擇"
   - "DOMAIN-SUFFIX,emby.zn.al,手動選擇"
   - "DOMAIN-SUFFIX,github.com,手動選擇"
@@ -486,4 +485,3 @@ rules:
   - "RULE-SET,cn_ip,中國直連"
   - "RULE-SET,dns_leak,手動選擇"
   - "MATCH,手動選擇"
-  
