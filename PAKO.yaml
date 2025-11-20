@@ -456,8 +456,8 @@ rules:
   - "DOMAIN-KEYWORD,gemini.google,智能AI"
   - "DOMAIN-SUFFIX,gemini.google.com,智能AI"
   - "DOMAIN-SUFFIX,ai.google.com,智能AI"
-  - "DOMAIN-SUFFIX,generativelanguage.googleapis.com,智能AI" # 额外的 Gemini API 域名
-  - "DOMAIN-SUFFIX,bard.google.com,智能AI" # 以前 Bard 的域名，可能仍有流量
+  - "DOMAIN-SUFFIX,generativelanguage.googleapis.com,智能AI"
+  - "DOMAIN-SUFFIX,bard.google.com,智能AI"
   # ==================================
 
   - "RULE-SET,douyin_domain,DIRECT"
@@ -467,6 +467,8 @@ rules:
   - "RULE-SET,youtube_domain,油管视频"
   - "RULE-SET,tiktok,外区抖音"
   - "DOMAIN-SUFFIX,adobe.io,REJECT"
+  # 注意：这里我们让 google_domain 和 google_ip 指向 “谷歌搜索” 策略组
+  # 而 “谷歌搜索” 策略组的优先级最高是“智能AI”
   - "RULE-SET,google_domain,谷歌搜索"
   - "RULE-SET,google_ip,谷歌搜索"
   - "RULE-SET,telegram_domain,电报聊天"
