@@ -1,7 +1,7 @@
 # PAKO
 metadata:
   version: "2025.06"
-  updated: "2025-06-11"
+  updated: "2025-11-20"
 owner: "PAKO"
 note: "urltest"
 mixed-port: 7897
@@ -244,140 +244,140 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
   #- icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
-    name: PROXY
+    name: 手动选择
     type: select
     max-failed-times: 3
     url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: AUTO
+    name: 自动选择
     type: url-test
     interval: 300
     max-failed-times: 3
     url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-    name: Telegram
+    name: 电报聊天
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PROXY
-      - GA AUTO
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 手动选择
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
-    name: AIGC
+    name: 智能AI
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - PROXY
-      - AUTO
-      - GA AUTO
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 手动选择
+      - 自动选择
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
-    name: Google
+    name: 谷歌搜索
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 手动选择
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
-    name: Spotify
+    name: 声田音乐
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 手动选择
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
-    name: Netflix
+    name: 奈飞电影
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 手动选择
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
-    name: TikTok
+    name: 外区抖音
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 手动选择
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-    name: Youtube
+    name: 油管视频
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
-      - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 手动选择
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
-    name: Steam
+    name: 游戏软件
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
-      - PROXY
+      - 手动选择
       - DIRECT
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
-    name: Mainland
+    name: 中国直连
     type: select
     interval: 300
     max-failed-times: 3
     proxies:
       - DIRECT
-      - PROXY
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - KR AUTO
-      - GA AUTO
+      - 手动选择
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
-    name: HK AUTO
+    name: 香港自动
     type: url-test
     interval: 300
     max-failed-times: 3
@@ -387,7 +387,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
-    name: SG AUTO
+    name: 新国自动
     type: url-test
     interval: 300
     max-failed-times: 3
@@ -397,7 +397,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
-    name: JP AUTO
+    name: 日本自动
     type: url-test
     interval: 300
     max-failed-times: 3
@@ -407,7 +407,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
-    name: US AUTO
+    name: 美国自动
     type: url-test
     interval: 300
     max-failed-times: 3
@@ -417,7 +417,7 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
-    name: KR AUTO
+    name: 韩国自动
     type: url-test
     interval: 300
     max-failed-times: 3
@@ -427,43 +427,43 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
-    name: GA AUTO
+    name: 全球自动
     type: url-test
     interval: 300
     max-failed-times: 3
     url: http://www.gstatic.com/generate_204
 
 rules:
-  - "RULE-SET,douyin_domain,Mainland"
+  - "RULE-SET,douyin_domain,DIRECT"
   - "DOMAIN-KEYWORD,vidhub,DIRECT"
-  - "DOMAIN,domainname,PROXY"
-  - "RULE-SET,Spotify_domain,Spotify"
-  - "RULE-SET,youtube_domain,Youtube"
-  - "RULE-SET,tiktok,TikTok"
-  - "RULE-SET,copilot,AIGC"
-  - "RULE-SET,claude,AIGC"
-  - "RULE-SET,bard,AIGC"
-  - "RULE-SET,openai,AIGC"
+  - "DOMAIN,domainname,手动选择"
+  - "RULE-SET,Spotify_domain,声田音乐"
+  - "RULE-SET,youtube_domain,油管视频"
+  - "RULE-SET,tiktok,外区抖音"
+  - "RULE-SET,copilot,智能AI"
+  - "RULE-SET,claude,智能AI"
+  - "RULE-SET,bard,智能AI"
+  - "RULE-SET,openai,智能AI"
   # 新增显式规则，确保 ChatGPT 相关流量走 AIGC
-  - "DOMAIN-SUFFIX,chat.openai.com,AIGC"
-  - "DOMAIN-SUFFIX,chatgpt.com,AIGC"
-  - "DOMAIN-SUFFIX,api.openai.com,AIGC"
-  - "DOMAIN-SUFFIX,auth0.com,AIGC"
+  - "DOMAIN-SUFFIX,chat.openai.com,智能AI"
+  - "DOMAIN-SUFFIX,chatgpt.com,智能AI"
+  - "DOMAIN-SUFFIX,api.openai.com,智能AI"
+  - "DOMAIN-SUFFIX,auth0.com,智能AI"
   - "DOMAIN-SUFFIX,adobe.io,REJECT"
-  - "RULE-SET,google_domain,Google"
-  - "RULE-SET,google_ip,Google"
-  - "RULE-SET,telegram_domain,Telegram"
-  - "RULE-SET,telegram_ip,Telegram"
-  - "RULE-SET,private,PROXY"
-  - "RULE-SET,netflix_domain,Netflix"
-  - "RULE-SET,emby_domain,Netflix"
-  - "RULE-SET,bing,Google"
-  - "RULE-SET,steam,Steam"
+  - "RULE-SET,google_domain,谷歌搜索"
+  - "RULE-SET,google_ip,谷歌搜索"
+  - "RULE-SET,telegram_domain,电报聊天"
+  - "RULE-SET,telegram_ip,电报聊天"
+  - "RULE-SET,private,手动选择"
+  - "RULE-SET,netflix_domain,奈飞电影"
+  - "RULE-SET,emby_domain,奈飞电影"
+  - "RULE-SET,bing,谷歌搜索"
+  - "RULE-SET,steam,游戏软件"
   - "RULE-SET,steamCN,DIRECT"
-  - "RULE-SET,geolocation-!cn,PROXY"
+  - "RULE-SET,geolocation-!cn,手动选择"
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
   - "RULE-SET,download,DIRECT"
-  - "RULE-SET,dns_leak,PROXY"
+  - "RULE-SET,dns_leak,手动选择"
   - "GEOIP,CN,DIRECT"
-  - "MATCH,PROXY"
+  - "MATCH,手动选择"
