@@ -246,7 +246,16 @@ proxy-groups:
     include-all: true
     name: 手动选择
     type: select
+    interval: 300
     max-failed-times: 3
+    proxies:
+      - 自动选择
+      - 香港自动
+      - 新国自动
+      - 日本自动
+      - 美国自动
+      - 韩国自动
+      - 全球自动
     url: http://www.gstatic.com/generate_204
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
@@ -434,21 +443,29 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
 
 rules:
+  # === 智能AI分流规则 - 最高优先级 ===
+  - "RULE-SET,copilot,智能AI"
+  - "RULE-SET,claude,智能AI"
+  - "RULE-SET,bard,智能AI"
+  - "RULE-SET,openai,智能AI"
+  - "DOMAIN-SUFFIX,chat.openai.com,智能AI"
+  - "DOMAIN-SUFFIX,chatgpt.com,智能AI"
+  - "DOMAIN-SUFFIX,api.openai.com,智能AI"
+  - "DOMAIN-SUFFIX,auth0.com,智能AI"
+  # 新增 Gemini 相关的规则，确保优先分流到智能AI
+  - "DOMAIN-KEYWORD,gemini.google,智能AI"
+  - "DOMAIN-SUFFIX,gemini.google.com,智能AI"
+  - "DOMAIN-SUFFIX,ai.google.com,智能AI"
+  - "DOMAIN-SUFFIX,generativelanguage.googleapis.com,智能AI" # 额外的 Gemini API 域名
+  - "DOMAIN-SUFFIX,bard.google.com,智能AI" # 以前 Bard 的域名，可能仍有流量
+  # ==================================
+
   - "RULE-SET,douyin_domain,DIRECT"
   - "DOMAIN-KEYWORD,vidhub,DIRECT"
   - "DOMAIN,domainname,手动选择"
   - "RULE-SET,Spotify_domain,声田音乐"
   - "RULE-SET,youtube_domain,油管视频"
   - "RULE-SET,tiktok,外区抖音"
-  - "RULE-SET,copilot,智能AI"
-  - "RULE-SET,claude,智能AI"
-  - "RULE-SET,bard,智能AI"
-  - "RULE-SET,openai,智能AI"
-  # 新增显式规则，确保 ChatGPT 相关流量走 AIGC
-  - "DOMAIN-SUFFIX,chat.openai.com,智能AI"
-  - "DOMAIN-SUFFIX,chatgpt.com,智能AI"
-  - "DOMAIN-SUFFIX,api.openai.com,智能AI"
-  - "DOMAIN-SUFFIX,auth0.com,智能AI"
   - "DOMAIN-SUFFIX,adobe.io,REJECT"
   - "RULE-SET,google_domain,谷歌搜索"
   - "RULE-SET,google_ip,谷歌搜索"
