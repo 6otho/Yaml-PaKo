@@ -91,6 +91,13 @@ rule-providers:
     interval: 86400
     format: yaml
     type: http
+  gemini_domain:
+    url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.yaml
+    path: ./ruleset/gemini_domain.yaml
+    behavior: domain
+    interval: 86400
+    format: yaml
+    type: http
   douyin_domain:
     url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DouYin/DouYin.yaml
     path: ./ruleset/douyin_domain.yaml
@@ -444,6 +451,7 @@ proxy-groups:
 
 rules:
   # === 智能AI分流规则 - 最高优先级 ===
+  - "RULE-SET,gemini_domain,智能AI"
   - "RULE-SET,copilot,智能AI"
   - "RULE-SET,claude,智能AI"
   - "RULE-SET,bard,智能AI"
