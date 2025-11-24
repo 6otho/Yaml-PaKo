@@ -226,7 +226,8 @@ rule-providers:
     type: http
 
 proxy-groups:
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/loonxsss.png
+  #- icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/loonxsss.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
     include-all: true
     name: 手動選擇
     type: select
