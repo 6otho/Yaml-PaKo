@@ -197,11 +197,11 @@ rule-providers:
     format: yaml
     type: http
   steam:
-    url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml
-    path: ./ruleset/steam.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+    path: ./ruleset/Steam.list
     behavior: classical
     interval: 86400
-    format: yaml
+    format: text
     type: http
   netflix_domain:
     url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml
@@ -220,10 +220,10 @@ rule-providers:
   dns_leak:
     type: http
     url: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/Rule/Prevent_DNS_Leaks.list
-    path: ./ruleset/dns_leak.yaml
+    path: ./ruleset/Prevent_DNS_Leaks.list
     behavior: classical
     interval: 86400
-    format: yaml
+    format: text
   tiktok:
     url: https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/TikTok/TikTok.yaml
     path: ./ruleset/tiktok.yaml
@@ -232,11 +232,11 @@ rule-providers:
     format: yaml
     type: http
   steamCN:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/SteamCN/SteamCN.yaml
-    path: ./ruleset/SteamCN.yaml
+    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
-    format: yaml
+    format: text
     type: http
   download:
     url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
