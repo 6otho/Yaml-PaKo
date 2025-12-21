@@ -237,14 +237,14 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - AUTO
-  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(5).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/lightning(5).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: AUTO
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/ChatGPT.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatgpt(balck).png
     name: AIGC
     type: select
     interval: 300
@@ -256,7 +256,7 @@ proxy-groups:
       - KR AUTO
       - FINAL
       - AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/telegram.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/telegram.png
     name: Telegram
     type: select
     interval: 300
@@ -268,7 +268,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - FINAL
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/google.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/google.png
     name: Google
     type: select
     interval: 300
@@ -280,7 +280,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/spotify.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/spotify.png
     name: Spotify
     type: select
     interval: 300
@@ -292,7 +292,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/netflix.png
     name: Netflix
     type: select
     interval: 300
@@ -304,7 +304,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/tiktok.png
     name: TikTok
     type: select
     interval: 300
@@ -317,7 +317,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - GA AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Youtube.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/Youtube.png
     name: Youtube
     type: select
     interval: 300
@@ -329,7 +329,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(1).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/game(1).png
     name: Steam
     type: select
     interval: 300
@@ -341,7 +341,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/chinese.png
     name: Mainland
     type: select
     interval: 300
@@ -355,7 +355,7 @@ proxy-groups:
       - KR AUTO
       - GA AUTO
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Hongkong(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
@@ -366,7 +366,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/singapore(1).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/singapore.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
@@ -377,7 +377,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Japan.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Japan(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
@@ -388,7 +388,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/US.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/US(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
@@ -399,7 +399,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Korea.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Korea(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
@@ -410,7 +410,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/face/master/Global.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/EuropeanUnion(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
