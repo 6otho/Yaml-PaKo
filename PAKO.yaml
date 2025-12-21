@@ -285,7 +285,7 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/03CNSoft/AppleIntelligence.png
     name: 智能AI
     type: select
     interval: 300
