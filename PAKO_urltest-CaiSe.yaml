@@ -227,7 +227,7 @@ rule-providers:
 
 proxy-groups:
   #- icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/loonxsss.png
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/02ProxySoftLogo/Loon.png
     include-all: true
     name: 手動選擇
     type: select
@@ -241,7 +241,7 @@ proxy-groups:
       - 台灣自動
       - 自動選擇
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/lightning(2).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/lightning(2).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     name: 自動選擇
@@ -276,7 +276,7 @@ proxy-groups:
       - 台灣自動
       - 香港自動
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/google(2).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/google(2).png
     name: 谷歌搜索
     type: select
     interval: 300
@@ -304,7 +304,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/netflix(old).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/netflix(old).png
     name: 奈飛電影
     type: select
     interval: 300
@@ -318,7 +318,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/tiktok(1).png
     name: 外區抖音
     type: select
     interval: 300
@@ -331,7 +331,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube(3).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/youtube(3).png
     name: 油管軟件
     type: select
     interval: 300
@@ -358,7 +358,7 @@ proxy-groups:
       - 韓國自動
       - 台灣自動
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/taiwan(1).png
     name: 中國直連
     type: select
     interval: 300
@@ -373,7 +373,7 @@ proxy-groups:
       - 台灣自動
       - 全球手動
 
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Hongkong.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Hongkong.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
@@ -384,7 +384,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/taiwan(3).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/taiwan(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(台湾|TaiWan|TW)\b|🇹🇼)
@@ -395,7 +395,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/singapore(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/singapore(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
@@ -406,7 +406,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Japan.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Japan.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
@@ -417,7 +417,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/US.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(美國|USA|United\s*States|US)\b|🇺🇸)
@@ -428,7 +428,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/Korea.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Korea.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(韓國|South\s*Korea|KOR)\b|🇰🇷)
@@ -439,7 +439,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/EuropeanUnion(1).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/EuropeanUnion(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美國|USA|United\s*States|US|香港|HK|HKG|韓國|South\s*Korea|KOR)).+$
