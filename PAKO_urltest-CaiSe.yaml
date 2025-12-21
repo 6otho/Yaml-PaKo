@@ -344,7 +344,7 @@ proxy-groups:
       - 美國自動
       - 韓國自動
       - 全球手動
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/game(3).png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/game(3).png
     name: 游戲軟件
     type: select
     interval: 300
