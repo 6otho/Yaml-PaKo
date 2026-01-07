@@ -366,7 +366,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.msftconnecttest.com/connecttest.txt
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/singapore(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -377,7 +377,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.msftconnecttest.com/connecttest.txt
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Japan.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -388,7 +388,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.msftconnecttest.com/connecttest.txt
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -399,7 +399,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.msftconnecttest.com/connecttest.txt
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Korea.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -410,7 +410,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.msftconnecttest.com/connecttest.txt
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Global.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -421,7 +421,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.msftconnecttest.com/connecttest.txt
  
 rules:
   - "RULE-SET,douyin_domain,Mainland"
