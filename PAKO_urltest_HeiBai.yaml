@@ -425,9 +425,9 @@ proxy-groups:
 rules:
   - "RULE-SET,douyin_domain,Mainland"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
-  - "DOMAIN-SUFFIX,vidhub1.cc,DIRECT"
-  - "DOMAIN-SUFFIX,lite.saturdayvideo.top,DIRECT"
-  - "DOMAIN-SUFFIX,dwq.emby.moe,DIRECT"
+  - "DOMAIN-SUFFIX,vidhub1.cc,FINAL"
+  - "DOMAIN-SUFFIX,lite.saturdayvideo.top,FINAL"
+  - "DOMAIN-SUFFIX,dwq.emby.moe,FINAL"
   - "DOMAIN,domainname,FINAL"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
