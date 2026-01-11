@@ -341,7 +341,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/China.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/China.png
     name: Mainland
     type: select
     interval: 300
@@ -355,7 +355,7 @@ proxy-groups:
       - KR AUTO
       - GA AUTO
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/Hong_Kong.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/Hong_Kong.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
@@ -366,7 +366,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/Singapore.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/Singapore.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
@@ -377,7 +377,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/Japan.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/Japan.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
@@ -388,7 +388,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/US.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
@@ -399,7 +399,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/Korea.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/Korea.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
@@ -410,7 +410,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Dark/European_Union.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/European_Union.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
