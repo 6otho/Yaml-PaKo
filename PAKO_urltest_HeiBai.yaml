@@ -341,7 +341,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/mini/China.png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/China_Map.png
     name: Mainland
     type: select
     interval: 300
