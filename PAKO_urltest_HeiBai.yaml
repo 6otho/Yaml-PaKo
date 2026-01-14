@@ -236,6 +236,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - HK AUTO
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/lightning(5).png
     include-all: true
@@ -254,6 +255,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - HK AUTO
       - FINAL
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/telegram.png
