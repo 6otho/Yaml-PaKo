@@ -292,8 +292,8 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/netflix.png
-    name: Netflix
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Emby.png
+    name: Emby
     type: select
     interval: 300
     max-failed-times: 3
@@ -426,8 +426,8 @@ rules:
   - "RULE-SET,douyin_domain,Mainland"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,FINAL"
-  - "DOMAIN-SUFFIX,lite.saturdayvideo.top,FINAL"
-  - "DOMAIN-SUFFIX,dwq.emby.moe,FINAL"
+  - "DOMAIN-SUFFIX,lite.saturdayvideo.top,Emby"
+  - "DOMAIN-SUFFIX,dwq.emby.moe,Emby"
   - "DOMAIN,domainname,FINAL"
   - "RULE-SET,Spotify_domain,Spotify"
   - "RULE-SET,youtube_domain,Youtube"
@@ -446,8 +446,8 @@ rules:
   - "RULE-SET,telegram_domain,Telegram"
   - "RULE-SET,telegram_ip,Telegram"
   - "RULE-SET,private,FINAL"
-  - "RULE-SET,netflix_domain,Netflix"
-  - "RULE-SET,emby_domain,Netflix"
+  - "RULE-SET,netflix_domain,Emby"
+  - "RULE-SET,emby_domain,Emby"
   - "RULE-SET,bing,Google"
   - "RULE-SET,steam,Steam"
   - "RULE-SET,geolocation-!cn,FINAL"
