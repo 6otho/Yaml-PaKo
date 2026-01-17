@@ -295,7 +295,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Emby1.png
-    name: Emby
+    name: EMBY
     type: select
     interval: 300
     max-failed-times: 3
