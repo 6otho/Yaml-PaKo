@@ -259,7 +259,7 @@ proxy-groups:
       - FINAL
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/telegram.png
-    name: Telegram
+    name: TELEGRAM
     type: select
     interval: 300
     max-failed-times: 3
@@ -271,7 +271,7 @@ proxy-groups:
       - KR AUTO
       - FINAL
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/google.png
-    name: Google
+    name: GOOGLE
     type: select
     interval: 300
     max-failed-times: 3
@@ -283,7 +283,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/spotify.png
-    name: Spotify
+    name: SPOTIFY
     type: select
     interval: 300
     max-failed-times: 3
@@ -307,7 +307,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/tiktok.png
-    name: TikTok
+    name: TIKTOK
     type: select
     interval: 300
     max-failed-times: 3
@@ -320,7 +320,7 @@ proxy-groups:
       - KR AUTO
       - GA AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/Youtube.png
-    name: Youtube
+    name: YOUTUBE
     type: select
     interval: 300
     max-failed-times: 3
@@ -332,7 +332,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/game(1).png
-    name: Steam
+    name: STEAM
     type: select
     interval: 300
     max-failed-times: 3
@@ -344,7 +344,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/China_Map.png
-    name: Mainland
+    name: MAINLAND
     type: select
     interval: 300
     max-failed-times: 3
@@ -425,15 +425,15 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
  
 rules:
-  - "RULE-SET,douyin_domain,Mainland"
+  - "RULE-SET,douyin_domain,MAINLAND"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,FINAL"
-  - "DOMAIN-SUFFIX,lite.saturdayvideo.top,Emby"
-  - "DOMAIN-SUFFIX,dwq.emby.moe,Emby"
+  - "DOMAIN-SUFFIX,lite.saturdayvideo.top,EMBY"
+  - "DOMAIN-SUFFIX,dwq.emby.moe,EMBY"
   - "DOMAIN,domainname,FINAL"
-  - "RULE-SET,Spotify_domain,Spotify"
-  - "RULE-SET,youtube_domain,Youtube"
-  - "RULE-SET,tiktok,TikTok"
+  - "RULE-SET,Spotify_domain,SPOTIFY"
+  - "RULE-SET,youtube_domain,YOUTUBE"
+  - "RULE-SET,tiktok,TIKTOK"
   - "DOMAIN-SUFFIX,speedtest.net,FINAL"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,claude,AIGC"
@@ -443,19 +443,19 @@ rules:
   - "DOMAIN-SUFFIX,chatgpt.com,AIGC"
   - "DOMAIN-SUFFIX,api.openai.com,AIGC"
   - "DOMAIN-SUFFIX,auth0.com,AIGC"
-  - "RULE-SET,google_domain,Google"
-  - "RULE-SET,google_ip,Google"
-  - "RULE-SET,telegram_domain,Telegram"
-  - "RULE-SET,telegram_ip,Telegram"
+  - "RULE-SET,google_domain,GOOGLE"
+  - "RULE-SET,google_ip,GOOGLE"
+  - "RULE-SET,telegram_domain,TELEGRAM"
+  - "RULE-SET,telegram_ip,TELEGRAM"
   - "RULE-SET,private,FINAL"
-  - "RULE-SET,netflix_domain,Emby"
-  - "RULE-SET,emby_domain,Emby"
-  - "RULE-SET,bing,Google"
-  - "RULE-SET,steam,Steam"
+  - "RULE-SET,netflix_domain,EMBY"
+  - "RULE-SET,emby_domain,EMBY"
+  - "RULE-SET,bing,GOOGLE"
+  - "RULE-SET,steam,STEAM"
   - "RULE-SET,geolocation-!cn,FINAL"
-  - "RULE-SET,cn_domain,Mainland"
-  - "RULE-SET,cn_ip,Mainland"
+  - "RULE-SET,cn_domain,MAINLAND"
+  - "RULE-SET,cn_ip,MAINLAND"
   - "RULE-SET,dns_leak,FINAL"
-  - "GEOIP,CN,Mainland"
+  - "GEOIP,CN,MAINLAND"
   - "MATCH,FINAL"
   
