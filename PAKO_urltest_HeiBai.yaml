@@ -232,8 +232,8 @@ proxy-groups:
     type: select
     max-failed-times: 3
     proxies:
-      - SG AUTO
       - JP AUTO
+      - SG AUTO
       - US AUTO
       - KR AUTO
       - HK AUTO
