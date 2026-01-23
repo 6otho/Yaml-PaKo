@@ -1,0 +1,456 @@
+/**
+ * FlClash 脚本转换 - 基于你的 YAML 配置
+ */
+function main(params) {
+  // 获取当前订阅中的所有原始节点
+  const originalProxies = params.proxies || [];
+
+  // 定义你的完整配置
+  const myConfig = {
+    "mixed-port": 7897,
+    "allow-lan": true,
+    "mode": "rule",
+    "global-ua": "clash-verge/v2.2.3",
+    "geodata-mode": true,
+    "geodata-loader": "standard",
+    "unified-delay": true,
+    "log-level": "warning",
+    "ipv6": true,
+    "tcp-concurrent": true,
+    "enable-process": true,
+    "find-process-mode": "strict",
+    "global-client-fingerprint": "chrome",
+    "keep-alive-interval": 15,
+    "geo-auto-update": true,
+    "geo-update-interval": 24,
+    
+    // 外部控制通常由 APP 托管，这里保留设置但可能会被 APP 覆盖
+    "external-controller": "127.0.0.1:9090",
+
+    "geox-url": {
+      "geoip": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat",
+      "geosite": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat",
+      "mmdb": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb",
+      "asn": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+    },
+
+    "profile": {
+      "store-selected": true,
+      "store-fake-ip": true
+    },
+
+    "tun": {
+      "enable": false, // 注意：你原配置是关闭 TUN 的，如需开启请改为 true
+      "device": "ClashVergeREV",
+      "stack": "mixed",
+      "mtu": 1500,
+      "dns-hijack": ["any:53", "tcp://any:53"],
+      "auto-route": true,
+      "auto-detect-interface": true
+    },
+
+    "dns": {
+      "enable": true,
+      "ipv6": true,
+      "enhanced-mode": "fake-ip",
+      "fake-ip-range": "198.18.0.1/16",
+      "use-hosts": true,
+      "nameserver": [
+        "https://doh.pub/dns-query",
+        "https://dns.alidns.com/dns-query",
+        "114.114.114.114",
+        "system"
+      ],
+      "fake-ip-filter": [
+        "*", "+.lan", "connect.rom.miui.com", "+.miwifi.com", "+.ntp.org",
+        "+.u-tools.cn", "+.mediatek.com", "+.cfprefer1.xyz", "+.wetab.link",
+        "+.tyasaka.xyz", "localhost.ptlogin2.qq.com", "localhost.sec.qq.com",
+        "localhost.work.weixin.qq.com", "+.weixin.qq.com", "+.wechat.com",
+        "time.windows.com", "+.msftconnecttest.com", "+.msftncsi.com",
+        "+.wpsmail.net", "+.henzanapp.com", "+.pconline.com.cn"
+      ]
+    },
+
+    "rule-providers": {
+      "private": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml",
+        "path": "./ruleset/private.yaml",
+        "behavior": "domain",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "cn_domain": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
+        "path": "./ruleset/cn_domain.yaml",
+        "behavior": "domain",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "douyin_domain": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DouYin/DouYin.yaml",
+        "path": "./ruleset/douyin_domain.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "Spotify_domain": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Spotify/Spotify.yaml",
+        "path": "./ruleset/Spotify_domain.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "youtube_domain": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml",
+        "path": "./ruleset/youtube_domain.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "telegram_domain": {
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.yaml",
+        "path": "./ruleset/telegram_domain.yaml",
+        "behavior": "domain",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "google_domain": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/yamal-PROXY/refs/heads/main/google.yaml",
+        "path": "./ruleset/google_domain.yaml",
+        "behavior": "domain",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "geolocation-!cn": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
+        "path": "./ruleset/geolocation-!cn.yaml",
+        "behavior": "domain",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "cn_ip": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml",
+        "path": "./ruleset/cn_ip.yaml",
+        "behavior": "ipcidr",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "telegram_ip": {
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.yaml",
+        "path": "./ruleset/telegram_ip.yaml",
+        "behavior": "ipcidr",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "google_ip": {
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml",
+        "path": "./ruleset/google_ip.yaml",
+        "behavior": "ipcidr",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "bing": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bing/Bing.yaml",
+        "path": "./ruleset/bing.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "copilot": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Copilot/Copilot.yaml",
+        "path": "./ruleset/copilot.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "claude": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.yaml",
+        "path": "./ruleset/claude.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "bard": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BardAI/BardAI.yaml",
+        "path": "./ruleset/bard.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "openai": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml",
+        "path": "./ruleset/openai.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "steam": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml",
+        "path": "./ruleset/steam.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "netflix_domain": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml",
+        "path": "./ruleset/netflix_domain.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "emby_domain": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Emby/Emby.yaml",
+        "path": "./ruleset/emby_domain.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      },
+      "dns_leak": {
+        "type": "http",
+        "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/Rule/Prevent_DNS_Leaks.list",
+        "path": "./ruleset/dns_leak.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml"
+      },
+      "tiktok": {
+        "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/TikTok/TikTok.yaml",
+        "path": "./ruleset/tiktok.yaml",
+        "behavior": "classical",
+        "interval": 86400,
+        "format": "yaml",
+        "type": "http"
+      }
+    },
+
+    "proxy-groups": [
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/lightning(3).png",
+        "include-all": true,
+        "name": "FINAL",
+        "type": "select",
+        "max-failed-times": 3,
+        "proxies": ["JP AUTO", "SG AUTO", "US AUTO", "KR AUTO", "HK AUTO", "AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/lightning(5).png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "name": "AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "max-failed-times": 3
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatgpt(balck).png",
+        "name": "AIGC",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["SG AUTO", "JP AUTO", "US AUTO", "KR AUTO", "HK AUTO", "FINAL", "AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/telegram.png",
+        "name": "TELEGRAM",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["HK AUTO", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO", "FINAL"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/google.png",
+        "name": "GOOGLE",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["FINAL", "HK AUTO", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/spotify.png",
+        "name": "SPOTIFY",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["FINAL", "HK AUTO", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Emby1.png",
+        "name": "EMBY",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["FINAL", "HK AUTO", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/tiktok.png",
+        "name": "TIKTOK",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["FINAL", "HK AUTO", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO", "GA AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/Youtube.png",
+        "name": "YOUTUBE",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["FINAL", "HK AUTO", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/game(1).png",
+        "name": "STEAM",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["FINAL", "DIRECT", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/China_Map.png",
+        "name": "MAINLAND",
+        "type": "select",
+        "interval": 300,
+        "max-failed-times": 3,
+        "proxies": ["DIRECT", "FINAL", "SG AUTO", "JP AUTO", "US AUTO", "KR AUTO", "GA AUTO"]
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Hong_Kong.png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)(?:\\b(香港|HK|HKG|Hong\\s*Kong)\\b|🇭🇰)",
+        "name": "HK AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.gstatic.com/generate_204"
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Singapore.png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)(?:\\b(新加坡|Singapore|SGP)\\b|🇸🇬)",
+        "name": "SG AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.gstatic.com/generate_204"
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Japann.png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)(?:\\b(日本|Japan|JPN)\\b|🇯🇵)",
+        "name": "JP AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.gstatic.com/generate_204"
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/United_States.png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)(?:\\b(美国|USA|United\\s*States|US)\\b|🇺🇸)",
+        "name": "US AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.gstatic.com/generate_204"
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Korea.png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)(?:\\b(韩国|South\\s*Korea|KOR)\\b|🇰🇷)",
+        "name": "KR AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.gstatic.com/generate_204"
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Global.png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\\s*States|US|香港|HK|HKG|韩国|South\\s*Korea|KOR)).+$",
+        "name": "GA AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.gstatic.com/generate_204"
+      }
+    ],
+
+    "rules": [
+      "RULE-SET,douyin_domain,MAINLAND",
+      "DOMAIN-SUFFIX,agedm.org,DIRECT",
+      "DOMAIN-SUFFIX,vidhub1.cc,FINAL",
+      "DOMAIN-SUFFIX,lite.saturdayvideo.top,EMBY",
+      "DOMAIN-SUFFIX,dwq.emby.moe,EMBY",
+      "DOMAIN,domainname,FINAL",
+      "RULE-SET,Spotify_domain,SPOTIFY",
+      "RULE-SET,youtube_domain,YOUTUBE",
+      "RULE-SET,tiktok,TIKTOK",
+      "DOMAIN-SUFFIX,speedtest.net,FINAL",
+      "RULE-SET,copilot,AIGC",
+      "RULE-SET,claude,AIGC",
+      "RULE-SET,bard,AIGC",
+      "RULE-SET,openai,AIGC",
+      "DOMAIN-SUFFIX,chat.openai.com,AIGC",
+      "DOMAIN-SUFFIX,chatgpt.com,AIGC",
+      "DOMAIN-SUFFIX,api.openai.com,AIGC",
+      "DOMAIN-SUFFIX,auth0.com,AIGC",
+      "RULE-SET,google_domain,GOOGLE",
+      "RULE-SET,google_ip,GOOGLE",
+      "RULE-SET,telegram_domain,TELEGRAM",
+      "RULE-SET,telegram_ip,TELEGRAM",
+      "RULE-SET,private,FINAL",
+      "RULE-SET,netflix_domain,EMBY",
+      "RULE-SET,emby_domain,EMBY",
+      "RULE-SET,bing,GOOGLE",
+      "RULE-SET,steam,STEAM",
+      "RULE-SET,geolocation-!cn,FINAL",
+      "RULE-SET,cn_domain,MAINLAND",
+      "RULE-SET,cn_ip,MAINLAND",
+      "RULE-SET,dns_leak,FINAL",
+      "GEOIP,CN,MAINLAND",
+      "MATCH,FINAL"
+    ]
+  };
+
+  // 关键步骤：保留原订阅的节点数据，否则新配置里没有节点
+  myConfig.proxies = originalProxies;
+
+  return myConfig;
+}
