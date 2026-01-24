@@ -467,7 +467,8 @@ rules:
   - "DOMAIN-SUFFIX,generativelanguage.googleapis.com,智能AI" # 额外的 Gemini API 域名
   - "DOMAIN-SUFFIX,bard.google.com,智能AI" # 以前 Bard 的域名，可能仍有流量
   # ==================================
-
+  
+  - "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
   - "RULE-SET,douyin_domain,DIRECT"
   - "DOMAIN-KEYWORD,vidhub,DIRECT"
   - "DOMAIN,domainname,手动选择"
