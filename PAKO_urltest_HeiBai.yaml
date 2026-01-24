@@ -425,6 +425,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
  
 rules:
+  - "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
   - "RULE-SET,douyin_domain,MAINLAND"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,FINAL"
