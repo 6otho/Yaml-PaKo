@@ -413,6 +413,7 @@ function main(params) {
     ],
 
     "rules": [
+      "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
       "RULE-SET,douyin_domain,MAINLAND",
       "DOMAIN-SUFFIX,agedm.org,DIRECT",
       "DOMAIN-SUFFIX,vidhub1.cc,FINAL",
