@@ -462,6 +462,7 @@ rules:
   - "DOMAIN-SUFFIX,emby.bangumi.ca,手動選擇"
   - "DOMAIN-SUFFIX,public.shrekmedia.org,手動選擇"
   
+  - "DOMAIN-SUFFIX,cloudflare.com,中國直連"
   - "DOMAIN-SUFFIX,github.com,手動選擇"
   - "DOMAIN-SUFFIX,subr.v5oo.eu.org,手動選擇"
   - "DOMAIN-SUFFIX,gemini.google.com,智能工具"
