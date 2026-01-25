@@ -412,7 +412,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-    filter: (?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼)
+    filter: (?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼|🇼🇸)
     name: 台湾自动
     type: url-test
     interval: 300
