@@ -343,7 +343,20 @@ function main(params) {
         "lazy": false,
         "max-failed-times": 3,
         "tolerance": 50,
-        "url": "http://www.gstatic.com/generate_204"
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
+      },
+      {
+        "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Taiwan(1).png",
+        "include-all": true,
+        "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
+        "filter": "(?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼)",
+        "name": "TW AUTO",
+        "type": "url-test",
+        "interval": 300,
+        "lazy": false,
+        "max-failed-times": 3,
+        "tolerance": 50,
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
       },
       {
         "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Singapore.png",
@@ -356,7 +369,7 @@ function main(params) {
         "lazy": false,
         "max-failed-times": 3,
         "tolerance": 50,
-        "url": "http://www.gstatic.com/generate_204"
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
       },
       {
         "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Japann.png",
@@ -369,7 +382,7 @@ function main(params) {
         "lazy": false,
         "max-failed-times": 3,
         "tolerance": 50,
-        "url": "http://www.gstatic.com/generate_204"
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
       },
       {
         "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/United_States.png",
@@ -382,7 +395,7 @@ function main(params) {
         "lazy": false,
         "max-failed-times": 3,
         "tolerance": 50,
-        "url": "http://www.gstatic.com/generate_204"
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
       },
       {
         "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Korea.png",
@@ -395,7 +408,7 @@ function main(params) {
         "lazy": false,
         "max-failed-times": 3,
         "tolerance": 50,
-        "url": "http://www.gstatic.com/generate_204"
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
       },
       {
         "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Global.png",
@@ -408,7 +421,7 @@ function main(params) {
         "lazy": false,
         "max-failed-times": 3,
         "tolerance": 50,
-        "url": "http://www.gstatic.com/generate_204"
+        "url": "http://www.msftconnecttest.com/connecttest.txt"
       }
     ],
 
