@@ -381,7 +381,7 @@ proxy-groups:
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Taiwan(1).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼)
+    filter: (?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼|🇼🇸)
     name: TW AUTO
     type: url-test
     interval: 300
