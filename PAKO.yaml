@@ -258,6 +258,7 @@ proxy-groups:
     proxies:
       - 自动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -280,6 +281,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -293,6 +295,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 新国自动
+      - 台湾自动
       - 日本自动
       - 美国自动
       - 韩国自动
@@ -306,6 +309,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -319,6 +323,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -332,6 +337,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -345,6 +351,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -358,6 +365,7 @@ proxy-groups:
     proxies:
       - 手动选择
       - 香港自动
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -372,6 +380,7 @@ proxy-groups:
       - 手动选择
       - DIRECT
       - 新国自动
+      - 台湾自动
       - 日本自动
       - 美国自动
       - 韩国自动
@@ -384,6 +393,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 手动选择
+      - 台湾自动
       - 新国自动
       - 日本自动
       - 美国自动
@@ -394,6 +404,16 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
     name: 香港自动
+    type: url-test
+    interval: 300
+    max-failed-times: 3
+    url: http://www.msftconnecttest.com/connecttest.txt
+
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
+    filter: (?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼)
+    name: 台湾自动
     type: url-test
     interval: 300
     max-failed-times: 3
