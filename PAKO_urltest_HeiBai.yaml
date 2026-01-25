@@ -237,6 +237,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - HK AUTO
+      - TW AUTO
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/05icon/lightning(5).png
     include-all: true
@@ -256,6 +257,7 @@ proxy-groups:
       - US AUTO
       - KR AUTO
       - HK AUTO
+      - TW AUTO
       - FINAL
       - AUTO
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/telegram.png
@@ -269,6 +271,7 @@ proxy-groups:
       - JP AUTO
       - US AUTO
       - KR AUTO
+      - TW AUTO
       - FINAL
   - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/google.png
     name: GOOGLE
@@ -277,6 +280,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
+      - TW AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -289,6 +293,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
+      - TW AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -301,6 +306,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
+      - TW AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -313,6 +319,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
+      - TW AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -326,6 +333,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
+      - TW AUTO
       - HK AUTO
       - SG AUTO
       - JP AUTO
@@ -338,6 +346,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - FINAL
+      - TW AUTO
       - DIRECT
       - SG AUTO
       - JP AUTO
@@ -351,6 +360,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - FINAL
+      - TW AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
@@ -362,6 +372,17 @@ proxy-groups:
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
     name: HK AUTO
+    type: url-test
+    interval: 300
+    lazy: false
+    max-failed-times: 3
+    tolerance: 50
+    url: http://www.gstatic.com/generate_204
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Taiwan.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)(?:\b(台湾|台灣|TW|TWN|Taiwan)\b|🇹🇼)
+    name: TW AUTO
     type: url-test
     interval: 300
     lazy: false
