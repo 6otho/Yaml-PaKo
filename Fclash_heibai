@@ -1,5 +1,5 @@
 /**
- * FlClash 脚本转换 - 基于你的 YAML 配置
+ * FlClash 脚本转换 - 已修复语法错误
  */
 function main(params) {
   // 获取当前订阅中的所有原始节点
@@ -24,7 +24,6 @@ function main(params) {
     "geo-auto-update": true,
     "geo-update-interval": 24,
     
-    // 外部控制通常由 APP 托管，这里保留设置但可能会被 APP 覆盖
     "external-controller": "127.0.0.1:9090",
 
     "geox-url": {
@@ -40,7 +39,7 @@ function main(params) {
     },
 
     "tun": {
-      "enable": false, // 注意：你原配置是关闭 TUN 的，如需开启请改为 true
+      "enable": false,
       "device": "ClashVergeREV",
       "stack": "mixed",
       "mtu": 1500,
@@ -349,7 +348,8 @@ function main(params) {
         "icon": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/Taiwan(1).png",
         "include-all": true,
         "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置",
-        "filter": "(?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼|🇼🇸)",
+        // 修复：\b 必须转义为 \\b
+        "filter": "(?i)(?:台湾|台灣|臺灣|\\b(TW|TWN|Taiwan)\\b|🇹🇼|🇼🇸)",
         "name": "TW AUTO",
         "type": "url-test",
         "interval": 300,
@@ -426,7 +426,8 @@ function main(params) {
     ],
 
     "rules": [
-      "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
+      // 修复：这里加了逗号
+      "DOMAIN-SUFFIX,cloudflare.com,DIRECT",
       "RULE-SET,douyin_domain,MAINLAND",
       "DOMAIN-SUFFIX,agedm.org,DIRECT",
       "DOMAIN-SUFFIX,vidhub1.cc,FINAL",
