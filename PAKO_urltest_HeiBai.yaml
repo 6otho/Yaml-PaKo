@@ -246,7 +246,7 @@ proxy-groups:
     type: url-test
     interval: 300
     max-failed-times: 3
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatgpt(balck).png
+  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/6otho/Loon_tool/refs/heads/main/icon/chatgpt(balck).png
     name: AIGC
     type: select
     interval: 300
