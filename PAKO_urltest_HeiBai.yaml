@@ -447,8 +447,9 @@ proxy-groups:
  
 rules:
   - "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
-  - "DOMAIN-SUFFIX,emos.ikuu.cc.cd,DIRECT"
   - "DOMAIN-SUFFIX,fandai.ikuu.cc.cd,DIRECT"
+  - "DOMAIN-SUFFIX,emos.ikuu.cc.cd,DIRECT"
+  - "DOMAIN-SUFFIX,emos.idaa.eu.org,DIRECT"
   - "RULE-SET,douyin_domain,MAINLAND"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,FINAL"
