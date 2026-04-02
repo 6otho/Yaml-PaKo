@@ -1,7 +1,7 @@
 # PAKO_urltest-heibai
 metadata:
   version: "HEIBAI-2.0"
-  updated: "2026-01"
+  updated: "2026-03"
 owner: "PAKO"
 note: "urltest-heibai-icon"
 mixed-port: 7897
@@ -447,6 +447,7 @@ proxy-groups:
  
 rules:
   - "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
+  - "DOMAIN-SUFFIX,emos.ikuu.cc.cd,DIRECT"
   - "RULE-SET,douyin_domain,MAINLAND"
   - "DOMAIN-SUFFIX,agedm.org,DIRECT"
   - "DOMAIN-SUFFIX,vidhub1.cc,FINAL"
