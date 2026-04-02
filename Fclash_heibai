@@ -429,6 +429,7 @@ function main(params) {
       // 修复：这里加了逗号
       "DOMAIN-SUFFIX,cloudflare.com,DIRECT",
       "RULE-SET,douyin_domain,MAINLAND",
+      "DOMAIN-SUFFIX,emos.ikuu.cc.cd,DIRECT",
       "DOMAIN-SUFFIX,agedm.org,DIRECT",
       "DOMAIN-SUFFIX,vidhub1.cc,FINAL",
       "DOMAIN-SUFFIX,lite.saturdayvideo.top,EMBY",
