@@ -446,6 +446,7 @@ proxy-groups:
     url: http://www.msftconnecttest.com/connecttest.txt
  
 rules:
+  - "DOMAIN,cloudflare.dev,DIRECT"
   - "DOMAIN,cloudflare.com,DIRECT"
   - "DOMAIN,fandai.ikuu.cc.cd,DIRECT"
   - "DOMAIN,emos.ikuu.cc.cd,DIRECT"
