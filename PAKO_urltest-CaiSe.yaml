@@ -406,7 +406,7 @@ proxy-groups:
     max-failed-times: 3
     tolerance: 50
     url: http://www.msftconnecttest.com/connecttest.txt
-  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Japan.png
+  - icon: https://gh.iknn.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Japan(3).png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
