@@ -2,8 +2,9 @@
 metadata:
   version: "2025.06"
   updated: "2025-11-20"
-owner: "PAKO"
-note: "urltest"
+  owner: "PAKO"
+  note: "urltest"
+
 mixed-port: 7897
 allow-lan: true
 mode: rule
@@ -21,24 +22,28 @@ global-client-fingerprint: chrome
 keep-alive-interval: 15
 geo-auto-update: true
 geo-update-interval: 24
+
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
   asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+
 profile:
   store-selected: true
   store-fake-ip: true
+
 tun:
   enable: false
   device: ClashVergeREV
   stack: mixed
   mtu: 1500
+  auto-route: true
+  auto-detect-interface: true
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
-  auto-route: true
-  auto-detect-interface: true
+
 dns:
   enable: true
   ipv6: true
@@ -75,6 +80,10 @@ dns:
     - "+.wpsmail.net"
     - "+.henzanapp.com"
     - "+.pconline.com.cn"
+    # === 新增：Steam Fake-IP 黑名单 ===
+    - "+.steamcontent.com"
+    - "+.steampowered.com"
+    - "+.steamserver.net"
 
 rule-providers:
   private:
@@ -245,14 +254,12 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-    
 
 proxy-groups:
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-  #- icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Loon.png
-    include-all: true
-    name: 手动选择
+  - name: 手动选择
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+    include-all: true
     interval: 300
     max-failed-times: 3
     proxies:
@@ -264,18 +271,20 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
+
+  - name: 自动选择
+    type: url-test
     url: http://www.msftconnecttest.com/connecttest.txt
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: 自动选择
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-    name: 电报聊天
+
+  - name: 电报聊天
     type: select
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -287,9 +296,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/03CNSoft/AppleIntelligence.png
-    name: 智能AI
+
+  - name: 智能AI
     type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/03CNSoft/AppleIntelligence.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -301,9 +311,10 @@ proxy-groups:
       - 韩国自动
       - 自动选择
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
-    name: 谷歌搜索
+
+  - name: 谷歌搜索
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -315,9 +326,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
-    name: 声田音乐
+
+  - name: 声田音乐
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -329,9 +341,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
-    name: 奈飞电影
+
+  - name: 奈飞电影
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -343,9 +356,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
-    name: 外区抖音
+
+  - name: 外区抖音
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -357,9 +371,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-    name: 油管视频
+
+  - name: 油管视频
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -371,9 +386,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
-    name: 游戏软件
+
+  - name: 游戏软件
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -385,9 +401,10 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
-    name: 中国直连
+
+  - name: 中国直连
     type: select
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
     interval: 300
     max-failed-times: 3
     proxies:
@@ -399,77 +416,84 @@ proxy-groups:
       - 美国自动
       - 韩国自动
       - 全球自动
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+
+  - name: 香港自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(香港|HK|HKG|Hong\s*Kong)\b|🇭🇰)
-    name: 香港自动
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+  - name: 台湾自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:台湾|台灣|臺灣|\b(TW|TWN|Taiwan)\b|🇹🇼|🇼🇸)
-    name: 台湾自动
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+  - name: 新国自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(新加坡|Singapore|SGP)\b|🇸🇬)
-    name: 新国自动
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+  - name: 日本自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(日本|Japan|JPN)\b|🇯🇵)
-    name: 日本自动
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+  - name: 美国自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(美国|USA|United\s*States|US)\b|🇺🇸)
-    name: 美国自动
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+  - name: 韩国自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
     filter: (?i)(?:\b(韩国|South\s*Korea|KOR)\b|🇰🇷)
-    name: 韩国自动
-    type: url-test
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
-  - icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
+  - name: 全球自动
+    type: url-test
+    url: http://www.msftconnecttest.com/connecttest.txt
+    icon: https://gh.ikuu.eu.org/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|剩余|仅限|套餐|计划
-    filter: (?i)^(?!.*(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\s*States|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
-    name: 全球自动
-    type: url-test
+    filter: (?i)^(?!.(?:新加坡|Singapore|SGP|日本|Japan|JPN|美国|USA|United\sStates|US|香港|HK|HKG|韩国|South\s*Korea|KOR)).+$
     interval: 300
     max-failed-times: 3
-    url: http://www.msftconnecttest.com/connecttest.txt
 
 rules:
+  # === 最优先：修复 Steam 下载环境 ===
+  - "DOMAIN-SUFFIX,steamserver.net,DIRECT"
+  - "DOMAIN-SUFFIX,cm.steampowered.com,DIRECT"
+  - "RULE-SET,steamCN,DIRECT"
+  - "RULE-SET,download,DIRECT"
+
   # === 智能AI分流规则 - 最高优先级 ===
   - "RULE-SET,gemini_domain,智能AI"
   - "RULE-SET,copilot,智能AI"
@@ -484,10 +508,10 @@ rules:
   - "DOMAIN-KEYWORD,gemini.google,智能AI"
   - "DOMAIN-SUFFIX,gemini.google.com,智能AI"
   - "DOMAIN-SUFFIX,ai.google.com,智能AI"
-  - "DOMAIN-SUFFIX,generativelanguage.googleapis.com,智能AI" # 额外的 Gemini API 域名
-  - "DOMAIN-SUFFIX,bard.google.com,智能AI" # 以前 Bard 的域名，可能仍有流量
-  # ==================================
+  - "DOMAIN-SUFFIX,generativelanguage.googleapis.com,智能AI"
+  - "DOMAIN-SUFFIX,bard.google.com,智能AI"
   
+  # === 基础及常规应用分流 ===
   - "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
   - "RULE-SET,douyin_domain,DIRECT"
   - "DOMAIN-KEYWORD,vidhub,DIRECT"
@@ -504,12 +528,14 @@ rules:
   - "RULE-SET,netflix_domain,奈飞电影"
   - "RULE-SET,emby_domain,奈飞电影"
   - "RULE-SET,bing,谷歌搜索"
+  
+  # === 全局 Steam 规则放在此处（非下载流量将走游戏软件节点） ===
   - "RULE-SET,steam,游戏软件"
-  - "RULE-SET,steamCN,DIRECT"
+  
+  # === 兜底及其他规则 ===
   - "RULE-SET,geolocation-!cn,手动选择"
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
-  - "RULE-SET,download,DIRECT"
   - "RULE-SET,dns_leak,手动选择"
   - "GEOIP,CN,DIRECT"
   - "MATCH,手动选择"
